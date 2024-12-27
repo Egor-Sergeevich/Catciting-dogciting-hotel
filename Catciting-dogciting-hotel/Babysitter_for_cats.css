@@ -1,0 +1,1828 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  .top-block {
+    width: 100%;
+    height: 200px;
+    background-color: transparent;
+    margin-bottom: 20px;
+  }
+  
+  /* Стили для шапки */
+  header {
+    background-color: #084887;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .burger {
+    display: none; /* Скрываем бургер-меню по умолчанию */
+  }
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    position: relative;
+    margin-right: 10px;
+  }
+  
+  nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .has-dropdown:hover .dropdown {
+    display: block;
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #084887;
+    min-width: 160px;
+    z-index: 1;
+    padding: 10px 0;
+    margin-top: 15px;
+    border-radius: 10px;
+  }
+  
+  .dropdown li {
+    margin: 0;
+  }
+  
+  .dropdown li a {
+    display: block;
+    padding: 10px 20px;
+  }
+  
+  .order-btn {
+    background-color: #F58A07;
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    cursor: pointer;
+    border-radius: 13px;
+    margin: 10px;
+  }
+  
+  .profile-icon {
+    color: #fff;
+    font-size: 24px;
+    margin-left: 20px;
+  }
+  
+  .right-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Основной блок */
+  .circle_0 {
+    position: absolute;
+    top: 300px;
+    right: 900px;
+    width: 400px;
+    height: 400px;
+    z-index: -1;
+  }
+  .circle_01 {
+    position: absolute;
+    top: 300px;
+    right: 900px;
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+  }
+  .circle_02 {
+    position: absolute;
+    top: 150px;
+    right: 750px;
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+  }
+  .circle_03 {
+    position: absolute;
+    top: 110px;
+    right: 0px;
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+  }
+  
+  .blurry-circle0 {
+    position: absolute;
+    top: 250px;
+    right: 340px;
+    width: 340px;
+    height: 180px;
+    background-color: #B6C1E4;
+    border-radius: 16px;
+    filter: blur(25px);
+    z-index: -1;
+  }
+  .blurry-circle01 {
+    position: absolute;
+    top: 170px;
+    right: 1160px;
+    width: 150px;
+    height: 150px;
+    background-color: #909CC2;
+    border-radius: 50%;
+    filter: blur(15px);
+    z-index: -2;
+  }
+  .blurry-circle02 {
+    position: absolute;
+    top: 340px;
+    right: 1080px;
+    width: 120px;
+    height: 120px;
+    background-color: #B6C1E4;
+    border-radius: 50%;
+    filter: blur(15px);
+    z-index: -2;
+  }
+  .blurry-circle03 {
+    position: absolute;
+    top: 300px;
+    right: 80px;
+    width: 120px;
+    height: 120px;
+    background-color: #B6C1E4;
+    border-radius: 50%;
+    filter: blur(15px);
+    z-index: -2;
+  }
+  .blurry-circle04 {
+    position: absolute;
+    top: 150px;
+    right: 220px;
+    width: 120px;
+    height: 120px;
+    background-color: #B6C1E4;
+    border-radius: 50%;
+    filter: blur(15px);
+    z-index: -2;
+  }
+
+.cat-sitting-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    position: relative;
+    left: 550px;
+    top: 40px  
+}
+.header-title {
+    font-size: 32px;
+    margin-top: 40px;
+    margin-left: 550px;
+    line-height: 50px;
+    position: relative;
+}
+.info-text {
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.blue-line {
+    border-bottom: 3px solid  #909CC2;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+    top: 70px;
+    border-radius: 3px;
+
+  }
+
+
+  /* блок 2  */
+.blurry-circle3 {
+    position: absolute;
+    top: 450px;
+    left: 700px;
+    width: 200px;
+    height: 200px;
+    background-color: #B6C1E4;
+    border-radius: 50%;
+    filter: blur(10px);
+    z-index: -1;
+  }
+  .blurry-circle4 {
+    position: absolute;
+    bottom: 100px;
+   right: 700px;
+    width: 200px;
+    height: 200px;
+    background-color: #B6C1E4;
+    border-radius: 50%;
+    filter: blur(10px);
+    z-index: -1;
+  }
+  .blurry-circle5 {
+    position: absolute;
+    top: 300px;
+   right: 700px;
+    width: 200px;
+    height: 200px;
+    background-color: #B6C1E4;
+    border-radius: 50%;
+    filter: blur(10px);
+    z-index: -1;
+  }
+  .section-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    text-align: center;
+    margin-top: 140px;
+  
+  }
+  
+  .bottom-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: transparent;
+  }
+  
+  .service-card {
+    position: relative;
+    width: 600px;
+    height: 200px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+  
+  .card-content {
+    display: flex;
+    height: 100%;
+  }
+  
+  .text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-right: 200px;
+  }
+  
+  .text-container h3 {
+    font-size: 16px; position: relative; left: 0px;
+    font-weight: unset;
+    text-align: left;
+    margin-bottom: 20px;
+
+  }
+  
+  .image-container {
+    width: 200px;
+    height: 100%;
+  }
+  
+  .dog-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 10px 10px;
+  }
+  
+  .arrow-image {
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    transform: translate(100%, -50%);
+    width: 130px;
+    height: 130px;
+    background-image: url('photo/Главная.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+    border-radius: 10px 10px 10px 10px;
+  }
+  
+  .blur-square {
+    position: absolute;
+    top: 80px;
+    right: -90px;
+    transform: translateY(-50%);
+    width: 130px;
+    height: 130px;
+    background-color: #909CC2;
+    filter: blur(10px);
+    z-index: 0;
+  }
+  
+  .custom-buttonn {
+    position: relative;
+    right: 45px;
+    display: inline-flex;
+    align-items: center;
+    background-color: #909CC2;
+    color: white;
+    text-decoration: none;
+    padding: 10px 60px;
+    border-radius: 5px;
+    font-size: 16px;
+
+    border-radius: 5px 0px 0px 5px;
+    margin-right: 10px;
+  }
+  
+  .arrow-box {
+    position: absolute;
+    right: -70px;
+    display: inline-block;
+    width: 42px;
+    height: 39px;
+    background-color: #909CC2;
+    border-radius: 0px 5px 5px 0px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  
+  .rectangle {
+    position: absolute;
+    bottom: 150px;
+    margin-left: 100px;
+    transform: translateX(-100%);
+    background-color: #909CC2;
+    color: white;
+    padding: 9px 40px;
+    font-size: 16px;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 1;
+  }
+  
+  .custom-button-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: visible;
+  }
+ 
+  /* 2 */
+  .text-container-2 h3 {
+    font-weight: unset;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 16px; position: relative;left: 30px;
+  }
+  
+  .bottom-block-2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: transparent;
+  }
+  
+  .service-card-2 {
+    position: relative;
+    width: 600px;
+    height: 225px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+  
+  .card-content-2 {
+    display: flex;
+    height: 100%;
+  }
+  
+  .text-container-2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-right: 200px;
+  }
+  
+  .dog-image-2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 10px 10px;
+  }
+  
+  .arrow-image-2 {
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    transform: translate(100%, -50%);
+    width: 130px;
+    height: 130px;
+    background-image: url('photo/Главная.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+    border-radius: 10px 10px 10px 10px;
+  }
+  
+  .blur-square-2 {
+    position: absolute;
+    top: 80px;
+    right: -90px;
+    transform: translateY(-50%);
+    width: 130px;
+    height: 130px;
+    background-color: #F9AB55;
+    filter: blur(10px);
+    z-index: 0;
+  }
+  
+  .custom-buttonn-2 {
+    position: relative;
+    right: 43px;
+    display: inline-flex;
+    align-items: center;
+    background-color: #F9AB55;
+    color: white;
+    text-decoration: none;
+    padding: 10px 60px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    border-radius: 5px 0px 0px 5px;
+    margin-right: 10px;
+  }
+  
+  .arrow-box-2 {
+    position: absolute;
+    right: -70px;
+    display: inline-block;
+    width: 42px;
+    height: 39px;
+    background-color: #F9AB55;
+    border-radius: 0px 5px 5px 0px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .arrow-2 {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(-45deg);
+  }
+  
+  .rectangle-2 {
+    position: absolute;
+    bottom: 175px;
+    left: 135px;
+    transform: translateX(-100%);
+    background-color: #F9AB55;
+    color: white;
+    padding: 9px 40px;
+    font-size: 16px;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 1;
+  }
+  
+  .custom-button-container-2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: visible;
+  }
+  
+  
+  /* 3 */
+  
+   .text-container-3 h3 {
+    font-weight: unset;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 16px; position: relative;left: 37px;
+  }
+  
+  .bottom-block-3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: transparent;
+  }
+  
+  .service-card-3 {
+    position: relative;
+    width: 600px;
+    height: 215px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+  
+  .card-content-3 {
+    display: flex;
+    height: 100%;
+  }
+  
+  .text-container-3 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-right: 200px;
+  }
+  
+  .image-container-3 {
+    width: 200px;
+    height: 100%;
+  }
+  
+  .dog-image-3 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 10px 10px;
+  }
+  
+  .arrow-image-3 {
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    transform: translate(100%, -50%);
+    width: 130px;
+    height: 130px;
+    background-image: url('photo/Главная.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+    border-radius: 10px 10px 10px 10px;
+  }
+  
+  .blur-square-3 {
+    position: absolute;
+    top: 80px;
+    right: -90px;
+    transform: translateY(-50%);
+    width: 130px;
+    height: 130px;
+    background-color: #084887;
+    filter: blur(10px);
+    z-index: 0;
+  }
+  
+  .custom-buttonn-3 {
+    position: relative;
+    right: 45px;
+    display: inline-flex;
+    align-items: center;
+    background-color: #084887;
+    color: white;
+    text-decoration: none;
+    padding: 10px 60px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    border-radius: 5px 0px 0px 5px;
+    margin-right: 10px;
+  }
+  
+  .arrow-box-3 {
+    position: absolute;
+    right: -70px;
+    display: inline-block;
+    width: 42px;
+    height: 39px;
+    background-color: #084887;
+    border-radius: 0px 5px 5px 0px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .arrow-3 {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  
+  .rectangle-3 {
+    position: absolute;
+    bottom: 165px;
+    left: 80px;
+    transform: translateX(-100%);
+    background-color: #084887;
+    color: white;
+    padding: 9px 40px;
+    font-size: 16px;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 1;
+  }
+  
+  .custom-button-container-3 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: visible;
+  } 
+  /* 3 блок */
+  .blockk{
+    position: relative;
+      bottom: 100px;
+  }
+.block_2 {
+    position: relative;
+}
+  .header_1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .left_1 {
+    position: relative;
+    left: 170px;
+
+    font-weight: bold;
+    font-size: 36px;
+    margin-right: 100px;
+
+  }
+
+  .right_1 {
+    position: relative;
+
+    left: 120px;
+    display: flex;
+    align-items: center;
+  }
+
+  .right-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    height: 70px;
+  }
+
+  .right-box img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  /* 2 */
+  .block_2 {
+    position: relative;
+    top: 110px;
+}
+
+
+  .content_2 {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 300px;
+  }
+
+  .left_2 {
+    position: absolute;
+    left: 1130px;
+    top: 30px;
+    font-weight: bold;
+    font-size: 36px;
+    margin-right: 100px;
+
+  }
+
+  .right_2 {
+    position: relative;
+    top: 10px;
+    left: 230px;
+    display: flex;
+    align-items: center;
+  }
+
+  .right-box_2 {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    height: 70px;
+  }
+
+  .right-box img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+
+   /* 3 */
+   .block_2 {
+    position: relative;
+    top: 110px;
+}
+  .header_3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .content_3 {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-top: 150px;
+  }
+
+  .left_3 {
+    position: relative;
+    left: 250px;
+    font-weight: bold;
+    font-size: 36px;
+    margin-right: 100px;
+
+  }
+
+  .right_3 {
+    position: relative;
+    left: 200px;
+    display: flex;
+    align-items: center;
+  }
+
+  .right-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    height: 70px;
+  }
+
+  .right-box img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  /* 4 */
+  .block_2 {
+    position: relative;
+    top: 110px;
+}
+  .header_4 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .content_4 {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-top: 30px;
+  }
+
+  .left_4 {
+    position: relative;
+    left: 1120px;
+    font-weight: bold;
+    font-size: 36px;
+    margin-right: 100px;
+  }
+
+  .right_4 {
+    position: relative;
+    left: 410px;
+    display: flex;
+    align-items: center;
+  }
+
+  .right-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    height: 70px;
+  }
+
+  .right-box img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  /* 5 */
+  .block_2 {
+    position: relative;
+    top: 110px;
+}
+  .header_5 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .content_5 {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-top: 30px;
+  }
+
+  .left_5 {
+    position: relative;
+    left: 130px;
+    font-weight: bold;
+    font-size: 36px;
+    margin-right: 100px;
+  }
+
+  .right_5 {
+    position: relative;
+    left: 80px;
+    display: flex;
+    align-items: center;
+  }
+
+  .right-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    height: 70px;
+  }
+
+  .right-box img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  /* блок 4 */
+  .team-container {
+    margin-bottom: 40px;
+    position: relative;
+    max-width: 1200px;
+    margin-left: 30px;
+    top: 20px;
+  
+  }
+  
+  .team-title-container {
+    align-items: center;
+  }
+  
+  .team-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: block;
+  
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .team-row {
+    display: flex;
+    justify-content: space-between;
+  margin: 50px;
+  margin-top: 20px;
+  
+    align-items: center;
+  
+    display: flex;
+  }
+  
+  .team-member {
+    width: 48%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .team-member-photo {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 10px 0 0 10px;
+    margin-left: 25px;
+  }
+  
+  .team-member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .team-member-info {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .team-member-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .team-member-rating {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .team-member-rating .star {
+    color: #ffd700;
+    font-size: 18px;
+    margin-right: 2px;
+  }
+  
+  .team-member-breeds {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .team-member-stats {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .show-more-btn {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    bottom: 30px;
+    background-color: #ff8c00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+
+ /* блок 5 */
+ .title_4 {
+  text-align: center ;
+  font-size: 32px;
+  margin-bottom: 40px;
+ }
+ .title_44{
+  color: white;
+  margin-left: 40px;
+  font-size: 18px;
+ }
+ .discount-box {
+  position: relative;
+  left: 410px;
+  display: flex;
+
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+.orange-discount {
+  background-color: #ff8c00;
+  padding: 20px;
+  align-items: center;
+  width: 420px;
+  position: relative;
+  left: 395px;
+}
+
+.blue-discount {
+  background-color: #084887;
+  padding: 15px;
+  align-items: center;
+}
+
+.purple-discount {
+  background-color: #909CC2;
+  padding: 20px;
+  position: relative;
+  left: 395px;
+  align-items: center;
+  width: 420px;
+}
+
+.circle-image {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.arrow-indicator {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 24px;
+  letter-spacing: 20px
+}
+.circle_4 {
+  position: absolute;
+  top: 2800px;
+  right: 990px;
+  width: 200px;
+  height: 200px;
+  z-index: -1;
+}
+
+.blurry-circle4 {
+  position: absolute;
+  top: 2720px;
+  right: 1080px;
+  width: 150px;
+  height: 150px;
+  background-color: #B6C1E4;
+  border-radius: 50%;
+  filter: blur(10px);
+  z-index: -2;
+}
+.circle_5 {
+  position: absolute;
+  top: 3200px;
+  left: 990px;
+  width: 200px;
+  height: 200px;
+  z-index: -1;
+}
+
+.blurry-circle5 {
+  position: absolute;
+  top: 3110px;
+  left: 1000px;
+  width: 150px;
+  height: 150px;
+  background-color: #B6C1E4;
+  border-radius: 50%;
+  filter: blur(10px);
+  z-index: -2;
+}
+
+.blurry-circle6 {
+  position: absolute;
+  top: 2600px;
+  left: 1000px;
+  width: 150px;
+  height: 150px;
+  background-color: #B6C1E4;
+  border-radius: 50%;
+  filter: blur(10px);
+  z-index: -2;
+}
+.blurry-circle7 {
+  position: absolute;
+  top: 3200px;
+  left: 40px;
+  width: 150px;
+  height: 150px;
+  background-color: #B6C1E4;
+  border-radius: 50%;
+  filter: blur(10px);
+  z-index: -2;
+}
+
+
+/* 
+  Подвал сайта */
+  footer {
+    position: relative;
+    left: 0px;
+    top: 40px;
+    background-color: #333;
+    color: #202020;
+    padding: 20px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    width: 1216.5px;
+
+  }
+
+  .ffz {
+    position: relative;
+    align-items: start;
+    display: block;
+    color: white;
+    font-size: 20px;
+    right: 400px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-map {
+    position: relative;
+    left: 690px;
+    padding: 20px 10px 10px 10px;
+  }
+  
+  .footer-icons-container {
+    display: block;
+    position: relative;
+  }
+  
+  .footer-icon-group {
+    display: block;
+    align-items: start;
+    margin: 0 10px;
+    position: relative;
+    right: 10px;
+  }
+  
+  .footer-icon {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    bottom: -5px;
+  
+  }
+  
+  .footer-contact {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-contact .footer-icon {
+    margin-right: 5px;
+  }
+
+  @media (max-width: 430px) {
+    .burger {
+      display: block; /* Показываем бургер-меню на мобильных */
+      font-size: 28px;
+      cursor: pointer;
+    }
+  
+    nav {
+      display: none; /* Скрываем меню навигации по умолчанию */
+      flex-direction: column; /* Меню будет вертикальным */
+      width: 100%; /* Ширина меню на весь экран */
+      background-color: #084887; /* Цвет фона для мобильного меню */
+      position: absolute; /* Позиционируем меню */
+      top: 80px; /* Расположение под шапкой */
+      left: 0;
+      z-index: 10; /* Убедимся, что меню поверх остальных элементов */
+      border-radius: 16px;
+      line-height:30px;
+      padding: 10px;
+      align-items: start;
+    }
+  
+    nav.active {
+      display: flex; /* Показываем меню при активации */
+    }
+  
+    nav ul {
+      flex-direction: column; /* Вертикальное расположение элементов меню */
+      width: 50%; /* Ширина списка на весь экран */
+      margin-bottom: 10px;
+      right: 70px;
+  
+    }
+    .dropdown {
+      line-height:19px;
+    }
+  
+    nav li {
+      margin: 0; /* Убираем отступы между пунктами меню */
+    }
+  
+    .right-actions {
+      flex-direction: column; /* Вертикальное расположение кнопок */
+      align-items: flex-start; /* Выравнивание по левому краю */
+    }
+  
+    .order-btn { 
+      margin: 5px 0; /* Отступы между кнопками */
+      
+    }
+    .profile-icon {
+position: relative;
+     right: 20px;
+     top: 5px;
+    }
+    /* 1 блок */
+    .header-title {
+      font-size: 24px; /* Уменьшаем размер заголовка */
+      margin-left: 0; /* Убираем левый отступ */
+      text-align: center; /* Центрируем текст */
+    }
+  
+    .cat-sitting-container {
+      max-width: 80%; /* Увеличиваем ширину контейнера */
+      left: 35px; /* Устанавливаем небольшой левый отступ */
+      top: 20px; /* Уменьшаем верхний отступ */
+      padding: 10px; /* Уменьшаем внутренние отступы */
+    }
+  
+    .info-text {
+      font-size: 18px; /* Уменьшаем размер текста */
+    }
+  
+    .blue-line {
+      width: 85%; /* Увеличиваем ширину линии */
+      top: 50px; /* Уменьшаем верхний отступ */
+    }
+  
+    .circle_0, .circle_01, .circle_02, .circle_03,
+    .blurry-circle0, .blurry-circle01, .blurry-circle02, 
+    .blurry-circle03, .blurry-circle04 {
+      right: 30%; /* Центрируем круги */
+      transform: translateX(50%); /* Выравниваем по центру */
+    }
+    .circle_0 {
+      position: absolute;
+      left: -100px;
+      top: 340px;
+    }
+    .circle_01 {
+      position: absolute;
+      left: 170px;
+      top: 300px;
+    }
+    .circle_02 {
+      position: absolute;
+      left: -100px;
+      top: 40px;
+    }
+  
+    .circle_0 {
+      width: 300px; /* Уменьшаем размер круга */
+      height: 300px;
+    }
+  
+    .circle_01, .circle_02, .circle_03 {
+      width: 150px; /* Уменьшаем размер кругов */
+      height: 150px;
+    }
+  
+    .blurry-circle0 {
+      width: 250px; /* Уменьшаем размер размытого круга */
+      height: 150px;
+    }
+  
+    .blurry-circle01, .blurry-circle02, .blurry-circle03, .blurry-circle04 {
+      width: 100px; /* Уменьшаем размер размытого круга */
+      height: 100px;
+    }
+    .blurry-circle01 {
+      position: absolute;
+      left: -40px;
+      top: 130px;
+    }
+    .blurry-circle02 {
+      position: absolute;
+      left: -40px;
+      top: 330px;
+    }
+    .blurry-circle03 {
+      position: absolute;
+      left: 270px;
+      top: 100px;
+    }
+    .blurry-circle04 {
+      position: absolute;
+      left: -160px;
+      top: 250px;
+      border-radius: 16px;
+width: 400px;
+height: 50px;
+    }
+    /* 2 блок */
+    .section-title {
+      font-size: 24px; /* Уменьшаем размер заголовка */
+      margin-top: 120px; /* Уменьшаем верхний отступ */
+    }
+  
+    .bottom-block, .bottom-block-2, .bottom-block-3 {
+      flex-direction: column; /* Переключаем на вертикальное расположение */
+      align-items: center; /* Центрируем содержимое */
+      height: auto; /* Убираем фиксированную высоту */
+      padding: 10px; /* Добавляем отступы */
+      margin-top: 20px;
+      position: relative;
+      right: 0px;
+    }
+  
+    .service-card, .service-card-2, .service-card-3 {
+      width: 70%; /* Увеличиваем ширину карточек */
+      height: 150px;
+      margin: 10px 0; /* Добавляем вертикальные отступы между карточками */
+      padding: 15px; /* Уменьшаем внутренние отступы */
+    }
+
+  
+    .text-container, .text-container-2, .text-container-3 {
+      margin-right: 0; /* Убираем правый отступ */
+      
+    }
+
+
+  
+    .text-container h3, .text-container-2 h3, .text-container-3 h3 {
+font-size: 13px;
+width: 220px;
+    }
+  
+    .custom-buttonn, .custom-buttonn-2, .custom-buttonn-3 {
+      padding: 9px 30px; /* Уменьшаем размеры кнопок */
+      font-size: 14px; /* Уменьшаем размер шрифта кнопок */
+
+    }
+  
+    .arrow-image, .arrow-image-2, .arrow-image-3 {
+      right: 60px; /* Уменьшаем отступ от правого края */
+      width: 100px; /* Уменьшаем размер изображений */
+      height: 100px;
+    }
+  
+    .blur-square, .blur-square-2, .blur-square-3 {
+      width: 100px; /* Уменьшаем размер размытого квадрата */
+      height: 100px;
+      left: 280px;
+    }
+  
+    .blurry-circle3, .blurry-circle4, .blurry-circle5 {
+      width: 100px; /* Уменьшаем размер размытого круга */
+      height: 100px;
+    }
+    .container {
+      position: relative;
+      right: 20px;
+    }
+.arrow-box,.arrow-box-2, .arrow-box-3  {
+  height: 35px;
+}
+.rectangle {
+  position: relative;
+ bottom: 140px;
+ left: 60px;
+}
+.text-container h3 {
+  position: relative  ;
+  top: 10px;
+  left: -110px;
+}
+.custom-buttonn {
+  position: relative;
+  right: 295px;
+}
+
+.rectangle-2 {
+  position: relative;
+  bottom: 150px;
+  left: 195px;
+}
+.text-container-2 h3 {
+  position: relative;
+  top: 10px; 
+  left: -75px;
+ 
+}
+.custom-buttonn-2 {
+  position: relative;
+  right: 230px;
+  bottom:0px;
+}
+
+.rectangle-3 {
+  position: relative;
+  bottom: 143px;
+  left: 140px;
+}
+.text-container-3 h3 {
+  position: relative;
+  top: 10px; 
+  left: -45px;
+ 
+}
+.custom-buttonn-3 {
+  position: relative;
+  right: 170px;
+  bottom:0px;
+}
+ /* 3 блок */
+ .block2{
+  position: relative;
+  top: 100px;
+  left: 10px;
+      }
+      .block_2,
+    .block_3,
+    .block_4,
+    .block_5 {
+      position: relative; /* Убираем абсолютное позиционирование */
+      top: 0; /* Убираем смещение сверху */
+      margin: 20px 0; /* Добавляем отступы между блоками */
+      display: flex; /* Используем флекс для выравнивания */
+      flex-direction: column; /* Вертикальное расположение элементов */
+      align-items: center; /* Центрируем элементы по горизонтали */
+    }
+  
+    .header_1,
+    .header_3,
+    .header_4,
+    .header_5 {
+      font-size: 24px; /* Уменьшаем размер заголовка */
+      margin-bottom: 10px; /* Уменьшаем отступ снизу */
+    }
+  
+    .content,
+    .content_2,
+    .content_3,
+    .content_4,
+    .content_5 {
+      display: flex; /* Используем флекс для выравнивания */
+      flex-direction: column; /* Вертикальное расположение элементов */
+      align-items: center; /* Центрируем элементы по горизонтали */
+      margin-top: 10px; /* Уменьшаем отступ сверху */
+      width: 100%; /* Задаем ширину для содержимого */
+    }
+    .content_2{
+      position: relative;
+      bottom: 10px;
+    }
+    .left_1,
+    .left_2,
+    .left_3,
+    .left_4,
+    .left_5 {
+      font-size: 24px; /* Уменьшаем размер текста */
+      margin-bottom: 10px; /* Отступ снизу */
+      text-align: center; /* Центрируем текст */
+    }
+    .left_1{
+      position: relative;
+      left: 40px;
+  
+    }
+    .left_2{
+      position: relative;
+      left: -110px;
+      top: 10px;
+    }
+    .left_3{
+      position: relative;
+      left: 40px;
+    }
+    .left_4{
+      position: relative;
+      left: 40px;
+      top: 0px;
+    }
+    .left_5{
+      position: relative;
+      left: 40px;
+    }
+    .right_1,
+    .right_2,
+    .right_3,
+    .right_4,
+    .right_5 {
+      display: flex; /* Используем флекс для выравнивания */
+      flex-direction: column; /* Вертикальное расположение элементов */
+      align-items: center; /* Центрируем элементы по вертикали */
+      justify-content: center; /* Центрируем элементы по горизонтали */
+      margin: 0; /* Убираем отступы */
+    }
+    .right_1{
+      position: relative;
+      left: -10px;
+    }
+    .right_2{
+      position: relative;
+      left: -160px;
+    }
+    .right_3{
+      position: relative;
+      left: -10px;
+    }
+    .right_4{
+      position: relative;
+      left: -10px;
+    }
+    .right_5{
+      position: relative;
+      left: -10px;
+    }
+  
+    .right-box {
+      display: flex; /* Используем флекс для выравнивания */
+      align-items: center; /* Центрируем элементы по вертикали */
+      border: 1px solid #ccc; /* Граница */
+      padding: 10px; /* Отступы внутри блока */
+      border-radius: 10px; /* Скругление углов */
+      height: auto; /* Автоматическая высота для адаптивности */
+      width: 90%; /* Ширина блока */
+    }
+  
+    .right-box img {
+      width: 50px; /* Уменьшаем размер изображения */
+      height: 50px; /* Уменьшаем размер изображения */
+      border-radius: 50%; /* Скругляем изображение */
+      margin-right: 10px; /* Отступ справа */
+    }
+   /* 4 блок */
+.team-container {
+  margin-bottom: 40px;
+  position: relative;
+  max-width: 100%; /* Увеличиваем ширину для мобильных */
+  padding: 0 15px; /* Добавляем отступы для мобильных */
+  top: 40px;
+  right: 15px;
+}
+
+.team-title-container {
+  align-items: center;
+}
+
+.team-title {
+  font-size: 24px; /* Уменьшаем размер заголовка */
+  font-weight: bold;
+  margin-bottom: 20px;
+  left: 110px;
+  text-align: center;
+}
+
+.team-row {
+  display: flex;
+  flex-direction: column; /* Меняем на колонку для мобильных */
+  align-items: center; /* Центрируем элементы */
+  margin: 0; /* Убираем внешние отступы */
+}
+
+.team-member {
+  width: 100%; /* Занимаем всю ширину */
+  max-width: 400px; /* Ограничиваем ширину для больших экранов */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.team-member-photo {
+  width: 80px; /* Уменьшаем размер фото */
+  height: 80px; /* Уменьшаем размер фото */
+  overflow: hidden;
+  border-radius: 10px 0 0 10px;
+  margin-left: 15px; /* Уменьшаем отступ */
+}
+
+.team-member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-member-info {
+  flex-grow: 1;
+  padding: 10px; /* Уменьшаем отступы */
+}
+
+.team-member-name {
+  font-size: 20px; /* Уменьшаем размер имени */
+  font-weight: bold;
+  margin-bottom: 5px; /* Уменьшаем отступ */
+}
+
+.team-member-rating {
+  display: flex;
+  margin-bottom: 5px; /* Уменьшаем отступ */
+}
+
+.team-member-rating .star {
+  color: #ffd700;
+  font-size: 16px; /* Уменьшаем размер звезд */
+  margin-right: 2px;
+}
+
+.team-member-breeds {
+  font-size: 14px; /* Уменьшаем размер текста */
+  margin-bottom: 5px; /* Уменьшаем отступ */
+}
+
+.team-member-stats {
+  font-size: 14px; /* Уменьшаем размер текста */
+  color: #666;
+}
+
+.show-more-btn {
+  display: block;
+  margin: 20px auto; /* Центрируем кнопку */
+  
+  background-color: #ff8c00;
+  color: #fff;
+  border: none;
+  padding: 10px 15px; /* Уменьшаем отступы */
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* 5 блок */
+.discount-boxx {
+  position: relative;
+  top: 60px;
+}
+.title_4 {
+  font-size: 24px; /* Уменьшаем размер заголовка */
+  margin-bottom: 0px; /* Уменьшаем отступ снизу */
+  position: relative;
+  bottom: 40px;
+  right: 5px;
+}
+
+.discount-box {
+  position: relative; /* Убираем абсолютное позиционирование */
+  left: 0; /* Убираем смещение */
+  margin: 0 auto; /* Центрируем блоки */
+  width: 200px; /* Уменьшаем ширину блоков для мобильных */
+  display: flex; /* Используем флекс для выравнивания */
+  flex-direction: row; /* Горизонтальное расположение элементов */
+  align-items: center; /* Центрируем элементы по вертикали */
+  padding: 10px; /* Уменьшаем отступы внутри блока */
+}
+
+.orange-discount,
+.blue-discount,
+.purple-discount {
+  width: 89%; /* Устанавливаем ширину 100% для всех блоков */
+  padding: 10px; /* Уменьшаем отступы */
+  margin-bottom: 10px; /* Добавляем отступы между блоками */
+}
+
+.circle-image {
+  width: 50px; /* Уменьшаем размер изображения */
+  height: 50px; /* Уменьшаем размер изображения */
+  margin-right: 10px; /* Отступ справа */
+}
+
+.arrow-indicator {
+  font-size: 20px; /* Уменьшаем размер стрелки */
+  margin: 10px 0; /* Увеличиваем отступы сверху и снизу */
+  margin-left: 10px;
+}
+
+.circle_4,
+.circle_5,
+.blurry-circle4,
+.blurry-circle5,
+.blurry-circle6,
+.blurry-circle7 {
+  position: static; /* Убираем абсолютное позиционирование для мобильной версии */
+  width: 50px; /* Уменьшаем размеры кругов */
+  height: 50px; /* Уменьшаем размеры кругов */
+  margin: 10px auto; /* Центрируем круги */
+  position: absolute;
+  top: 50px;
+  left: 20px;
+}
+
+.blurry-circle4,
+.blurry-circle5,
+.blurry-circle6,
+.blurry-circle7 {
+  filter: blur(5px); /* Уменьшаем эффект размытия */
+
+}
+/* Подвал сайта */
+footer {
+  background-color: #333;
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Изменяем на вертикальное расположение для мобильных */
+  align-items: center; /* Центрируем элементы */
+  width: 100%;
+  position: relative;
+  top: 90px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column; /* Вертикальное расположение для мобильных */
+  align-items: center; /* Центрируем элементы */
+}
+
+.footer-map {
+  max-width: 100%;
+  left: -15px;; /* Устанавливаем ширину карты на 100% */
+
+}
+
+.ffz {
+  text-align: center; /* Центрируем текст */
+  font-size: 16px; /* Уменьшаем размер шрифта для мобильных */
+  left:-15px;
+  max-width: 350px;
+}
+
+.footer-icons-container {
+  display: flex; /* Используем flexbox для иконок */
+  justify-content: center; /* Центрируем иконки */
+  flex-wrap: wrap; /* Позволяем переносить иконки на новую строку */
+  margin-top: 10px; /* Отступ сверху для иконок */
+}
+
+.footer-icon-group {
+  display: flex; /* Используем flexbox для группы иконок */
+  align-items: center; /* Центрируем иконки и текст по вертикали */
+  margin: 0 10px; /* Отступы между группами иконок */
+}
+
+.footer-icon {
+  width: 24px; /* Уменьшаем размер иконок */
+  height: 24px; /* Уменьшаем размер иконок */
+  margin-right: 5px; /* Отступ справа для иконки */
+  margin-bottom: 10px;
+}
+
+  }

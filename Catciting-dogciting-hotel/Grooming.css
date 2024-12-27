@@ -1,0 +1,1123 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  .top-block {
+    width: 100%;
+    height: 200px;
+    background-color: transparent;
+    margin-bottom: 20px;
+  }
+  
+  /* Стили для шапки */
+  header {
+    background-color: #084887;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .burger {
+    display: none; /* Скрываем бургер-меню по умолчанию */
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    position: relative;
+    margin-right: 10px;
+  }
+  
+  nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .has-dropdown:hover .dropdown {
+    display: block;
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #084887;
+    min-width: 160px;
+    z-index: 1;
+    padding: 10px 0;
+    margin-top: 15px;
+    border-radius: 10px;
+  }
+  
+  .dropdown li {
+    margin: 0;
+  }
+  
+  .dropdown li a {
+    display: block;
+    padding: 10px 20px;
+  }
+  
+  .order-btn {
+    background-color: #F58A07;
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    cursor: pointer;
+    border-radius: 13px;
+    margin: 10px;
+  }
+  
+  .profile-icon {
+    color: #fff;
+    font-size: 24px;
+    margin-left: 20px;
+  }
+  
+  .right-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Основной блок */
+  /* Стили для главного контента */
+.blurry-circle {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    width: 200px;
+    height: 200px;
+    background-color: #B6C1E4;
+    border-radius: 50%;
+    filter: blur(10px);
+    z-index: -1;
+  }
+  
+  .blurry-circle2 {
+    position: absolute;
+    top: 500px;
+    right: 730px;
+    width: 200px;
+    height: 200px;
+    background-color: #B6C1E4;
+    border-radius: 50%;
+    filter: blur(10px);
+    z-index: -1;
+  }
+  .blurry-circle3 {
+    position: absolute;
+    top: 60px;
+    right: 1100px;
+    width: 150px;
+    height: 150px;
+    background-color: #B6C1E4;
+    border-radius: 50%;
+    filter: blur(10px);
+    z-index: -1;
+  }
+  
+  .hero {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0px 10px 20px;
+    bottom: 30px;
+
+  }
+  
+  .hero-text h1 {
+    font-size: 33px;
+    position: relative;
+    left: 100px;
+    overflow: hidden;
+    /* margin: 0px 0px 170px 0px; */
+  }
+  
+  .hero-text p {
+    font-size: 24px;
+    width: 300px;
+  }
+  
+  .divider {
+    border-top: 5px solid #F58A07; 
+    border-radius: 3px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    overflow: hidden;
+  }
+  
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, 300px);
+    grid-gap: 20px;
+    height: 700px;
+    position: relative;
+   margin: 0px;
+overflow: visible;    
+
+
+  }
+  
+  .photo-item {
+    position: relative;
+    bottom: 50px;
+  }
+  
+  .photo_1 {
+    position: absolute;
+    top: 510px;
+    left: 460px;
+    max-width: 170px;
+    max-height: 230px;
+    border-radius: 30px;
+  }
+  
+  .photo_2 {
+    top: 160px;
+    right: 170px;
+    position: absolute;
+    max-width: 270px;
+    max-height: 270px;
+    border-radius: 30px;
+  }
+  
+  .photo_3 {
+    position: absolute;
+    top: 325px;
+    right: 320px;
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+  
+  }
+  
+  .photo_4 {
+    position: absolute;
+    bottom: 330px;
+    left: 480px;
+    max-width: 280px;
+    max-height: 280px;
+    border-radius: 30px;
+  }
+  
+  .photo_5 {
+    position: absolute;
+    top: 45px;
+    right: 190px;
+    max-width: 230px;
+    max-height: 230px;
+    border-radius: 30px;
+    
+  }
+  
+  .photo_6 {
+    position: absolute;
+    bottom: 120px;
+    left: 20px;
+    max-width: 260px;
+    max-height: 260px;
+    border-radius: 30px;
+  }
+
+  /* блок 2 */
+  .service-one{
+    position: relative;
+    bottom:70px;
+  }
+  .service-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+position: relative;
+
+  }
+  
+  .service-block-title {
+    position: relative;
+    margin-bottom: 100px;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .service-header {
+    display: flex;
+    gap: 90px;
+
+  }
+  .service-header-item {
+    position: relative;
+bottom: 50px;
+    width: 300px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 50px 50px 50px;
+  }
+
+  .service-header-item-2 {
+    position: relative;
+bottom: 10px;
+    width: 300px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 50px 50px 50px;
+  }
+  .service-header-item_1 {
+    position: relative;
+    left: 20px;
+    width: 300px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .service-header-item_2 {
+    position: relative;
+    top: 40px;
+    left: 20px;
+    width: 300px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .service-header-content {
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    left: 140px;
+    background-color: #fff;
+    border-radius: 16px;
+    border: 1px solid #000;
+    display: block;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .service-header-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid #ff6b00;
+    margin-bottom: 10px;
+  }
+  
+  .service-header-text {
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .service-items {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .service-item {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  .service-icon-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid #ff6b00;
+  }
+
+  .blurry-circle-1 {
+    position: absolute;
+    bottom: -25px;
+    left: 170px;
+    width: 420px;
+    height: 240px;
+    background-color: #B6C1E4;
+    border-radius: 12%;
+    filter: blur(14px);
+    z-index: -1;
+  }
+
+  .blurry-circle-0 {
+    position: absolute;
+    bottom: -25px;
+    left: 170px;
+    width: 420px;
+    height: 240px;
+    background-color: #B6C1E4;
+    border-radius: 12%;
+    filter: blur(14px);
+    z-index: -1;
+  }
+  .circle_1 {
+    position: relative;
+    bottom: 100px;
+    width: 100px;
+    height: 100px;
+    right: 860px;
+    border-radius: 50%;
+    display: flex;
+    margin: 20px;
+  }
+  .blurry-circle1 {
+    position: absolute;
+    top: 270px;
+    left: 10px;
+    width: 120px;
+    height: 120px;
+    background-color: #B6C1E4;
+    border-radius: 50%;
+    filter: blur(7px);
+    z-index: -1;
+  }
+
+
+
+/* Блок 3 */
+.title {
+    position: relative;
+    bottom: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.grid {
+  bottom: 10px;
+  position: relative;
+
+}
+
+/* Блок 4 */
+  .service-header-content_4 {
+    position: absolute;
+    top: 0px;
+    height: 190px;
+    width: 450px;
+    left: 700px;
+    background-color: #fff;
+    border-radius: 16px;
+    border: 1px solid #000;
+    display: block;
+    padding: 10px;
+  }
+  .service-header-title_4 {
+    position: absolute;
+    right: 890px;
+    top: 60px;
+    white-space: nowrap;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: start;
+    border-bottom: 4px solid #ff6b00;
+    border-radius: 3px;
+    transition: opacity 0.5s;
+    
+  }
+.service-header-text-4 {
+  font-size: 14px;
+}
+  .blurry-circle-4 {
+    position: absolute;
+    bottom: -60px;
+    left: 700px;
+    width: 505px;
+    height: 240px;
+    background-color: #B6C1E4;
+    border-radius: 12%;
+    filter: blur(14px);
+    z-index: -1;
+  }
+  .service-block_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+position: relative;
+
+
+  }
+  
+  .service-block-title_2 {
+    position: relative;
+    margin-top: 450px;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+  }
+
+  /* 2 */
+  .service-header-content_4-1 {
+    position: absolute;
+    top: 280px;
+    height: 190px;
+    width: 450px;
+    left: 700px;
+    background-color: #fff;
+    border-radius: 16px;
+    border: 1px solid #000;
+    display: block;
+    padding: 10px;
+  }  
+  .blurry-circle-4-1 {
+    position: absolute;
+    top: 250px;
+    left: 700px;
+    width: 505px;
+    height: 240px;
+    background-color: #B6C1E4;
+    border-radius: 12%;
+    filter: blur(14px);
+    z-index: -1;
+  }
+  .service-header-title_4-1 {
+    position: absolute;
+    right: 720px;
+    top: 60px;
+    white-space: nowrap;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: start;
+    border-bottom: 4px solid #ff6b00;
+    border-radius: 3px;
+    
+  }
+
+  .service-block_2-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+position: relative;
+
+  }
+  
+  .service-block-title_2-1 {
+    position: relative;
+    margin-top: 450px;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+  }
+
+  /* 3 */
+  .service-header-content_4-2 {
+    position: absolute;
+    top: 560px;
+    height: 190px;
+    width: 450px;
+    left: 700px;
+    background-color: #fff;
+    border-radius: 16px;
+    border: 1px solid #000;
+    display: block;
+    padding: 10px;
+  }  
+  .blurry-circle-4-2 {
+    position: absolute;
+    top: 530px;
+    left: 700px;
+    width: 505px;
+    height: 240px;
+    background-color: #B6C1E4;
+    border-radius: 12%;
+    filter: blur(14px);
+    z-index: -1;
+  }
+  .service-header-title_4-2 {
+    position: absolute;
+    right: 890px;
+    top: 60px;
+    white-space: nowrap;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: start;
+    border-bottom: 4px solid #ff6b00;
+    border-radius: 3px;
+    
+  }
+
+  .service-block_2-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+position: relative;
+
+  }
+  
+  .service-block-title_2-2 {
+    position: relative;
+    margin-top: 450px;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+  }
+
+
+
+/* 
+  Подвал сайта */
+  footer {
+    position: relative;
+    left: 0px;
+    top: 940px;
+    background-color: #333;
+    color: #202020;
+    padding: 20px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    width: 183.2%;
+
+  }
+
+  .ffz {
+    position: relative;
+    align-items: start;
+    display: block;
+    color: white;
+    font-size: 20px;
+    right: 180px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-map {
+    position: relative;
+    left: 910px;
+    padding: 20px 10px 10px 10px;
+  }
+  
+  .footer-icons-container {
+    display: block;
+    position: relative;
+  }
+  
+  .footer-icon-group {
+    display: block;
+    align-items: start;
+    margin: 0 10px;
+    position: relative;
+    right: 10px;
+  }
+  
+  .footer-icon {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    bottom: -5px;
+  
+  }
+  
+  .footer-contact {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-contact .footer-icon {
+    margin-right: 5px;
+  }
+
+  @media (max-width: 430px) {
+    .burger {
+      display: block; /* Показываем бургер-меню на мобильных */
+      font-size: 28px;
+      cursor: pointer;
+    }
+  
+    nav {
+      display: none; /* Скрываем меню навигации по умолчанию */
+      flex-direction: column; /* Меню будет вертикальным */
+      width: 100%; /* Ширина меню на весь экран */
+      background-color: #084887; /* Цвет фона для мобильного меню */
+      position: absolute; /* Позиционируем меню */
+      top: 80px; /* Расположение под шапкой */
+      left: 0;
+      z-index: 10; /* Убедимся, что меню поверх остальных элементов */
+      border-radius: 16px;
+      line-height:30px;
+      padding: 10px;
+      align-items: start;
+    }
+  
+    nav.active {
+      display: flex; /* Показываем меню при активации */
+    }
+  
+    nav ul {
+      flex-direction: column; /* Вертикальное расположение элементов меню */
+      width: 50%; /* Ширина списка на весь экран */
+      margin-bottom: 10px;
+      right: 70px;
+  
+    }
+    .dropdown {
+      line-height:19px;
+    }
+  
+    nav li {
+      margin: 0; /* Убираем отступы между пунктами меню */
+    }
+  
+    .right-actions {
+      flex-direction: column; /* Вертикальное расположение кнопок */
+      align-items: flex-start; /* Выравнивание по левому краю */
+    }
+  
+    .order-btn { 
+      margin: 5px 0; /* Отступы между кнопками */
+    }
+  
+    .profile-icon {
+      margin-left: 0; /* Убираем отступ слева */
+      position: relative;
+      margin-top: 10px;
+    }
+
+    /* 1 блок */
+    .hero {
+      flex-direction: column; /* Изменяем направление на вертикальное */
+      align-items: center; /* Центрируем элементы */
+      margin: 0; /* Убираем отступы */
+      bottom: 0; /* Сбрасываем позиционирование */
+      margin-top: 40px;
+
+    }
+  
+    .hero-text h1 {
+      font-size: 24px; /* Уменьшаем размер заголовка */
+      left: 0; /* Сбрасываем позиционирование */
+      margin: 0 10px; /* Добавляем отступы */
+      text-align: center; /* Центрируем текст */
+      max-width: 300px;
+    }
+  
+    .divider {
+      margin-top: 10px;
+      margin-left: 20px; /* Убираем отступ слева */
+      margin-bottom: 10px; /* Уменьшаем отступ снизу */
+      width: 90%; /* Устанавливаем ширину делителя */
+    }
+  
+    .photo-grid {
+      grid-template-columns: repeat(2, 1fr); /* Изменяем на 2 колонки */
+      grid-template-rows: auto; /* Автоматическая высота строк */
+      height: auto; /* Убираем фиксированную высоту */
+      margin: 0; /* Убираем отступы */
+
+    }
+  
+    .photo-item {
+      bottom: 0; /* Сбрасываем позиционирование */
+      margin: 10px; /* Добавляем отступы между элементами */
+    }
+  
+    .photo_1 {
+      position: relative;
+      top: 245px;
+      left: 70px;
+      max-width: 110px;
+      max-height: 150px;
+      border-radius: 16px;
+    }
+    
+    .photo_2 {
+      top: 20px;
+      right: 170px;
+      position: relative;
+      max-width: 100px;
+      max-height: 100px;
+      border-radius: 16px;
+    }
+    
+    .photo_3 {
+      position: relative;
+      top: -15px;
+      left: 80px;
+      max-width: 100px;
+      max-height: 100px;
+      border-radius: 16px;
+    
+    }
+    
+    .photo_4 {
+      position: relative;
+      bottom: 90px;
+      left: -50px;
+      max-width: 100px;
+      max-height: 100px;
+      border-radius: 16px;
+    }
+    
+    .photo_5 {
+      position: relative;
+      top: -160px;
+      right: 45px;
+      max-width: 110px;
+      max-height: 100px;
+      border-radius: 16px;
+      
+    }
+    
+    .photo_6 {
+      position: relative;
+      bottom: 150px;
+      left: 45px;
+      max-width: 100px;
+      max-height: 100px;
+      border-radius: 16px;
+    }
+  
+    .blurry-circle, .blurry-circle2, .blurry-circle3 {
+      display: none; /* Скрываем размытые круги на мобильной версии */
+    }
+
+    /* 3 блок */
+    .service-one {
+      bottom: 0; /* Сбрасываем позиционирование */
+      padding: 10px; /* Добавляем отступы для улучшения внешнего вида */
+      margin-top: -50px;
+
+    }
+  
+    .service-block {
+      align-items: center; /* Центрируем элементы */
+      margin: 20px 0; /* Убираем лишние отступы */
+
+    }
+  
+    .service-block-title {
+      font-size: 20px; /* Уменьшаем размер заголовка */
+      margin-bottom: 50px; /* Уменьшаем отступ снизу */
+      text-align: center; /* Центрируем заголовок */
+    }
+  
+    .service-header {
+      flex-direction: column; /* Изменяем направление на вертикальное */
+      gap: 20px; /* Уменьшаем расстояние между элементами */
+      position: relative;
+      right: 140px;
+    }
+  
+    .service-header-item,
+    .service-header-item_1,
+    .service-header-item-2,  
+    .service-header-item_2{
+      width: 100%; /* Устанавливаем ширину на 100% */
+      height: auto; /* Автоматическая высота */
+      margin: 10px 0; /* Центрируем элементы */
+      position: relative; /* Убираем фиксированное позиционирование */
+      display: flex; /* Обеспечиваем правильное выравнивание */
+      justify-content: center; /* Центрируем содержимое */
+    }
+    .service-header-item_1 {
+      position: relative;
+      left: 0px;
+      bottom: 40px;
+    }
+    .service-header-item-2 {
+      position: relative;
+      left: 0px;
+      bottom: 10px;
+    }
+    .service-header-item_2 {
+      position: relative;
+      left: 0px;
+     top: 0px;
+    }
+  
+    .service-header-content {
+      width: 90%; /* Устанавливаем ширину на 90% */
+      padding: 10px; /* Добавляем внутренние отступы */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Добавляем тень для эффекта */
+      background-color: #fff; /* Устанавливаем фон для контента */
+      border-radius: 16px; /* Скругляем углы */
+      position: relative; /* Убираем абсолютное позиционирование */
+    }
+  
+    .service-header-title {
+      font-size: 16px; /* Уменьшаем размер заголовка */
+      text-align: center; /* Центрируем заголовок */
+      position: relative;
+      line-height:30px;
+    }
+  
+    .service-header-text {
+      font-size: 12px; /* Уменьшаем размер текста */
+      text-align: center; /* Центрируем текст */
+      position: relative;
+      top: 20px;
+    }
+  
+    .circle_1 {
+      width: 80px; /* Уменьшаем размер круга */
+      height: 80px; /* Уменьшаем размер круга */
+      margin: 10px auto; /* Центрируем круг */
+    }
+  
+    .blurry-circle-0,
+    .blurry-circle-1,
+    .blurry-circle1 {
+width: 380px;
+bottom: -5px;
+left: 180px;
+    }
+/* 
+    3 блок */
+    .header-wrapper {
+      text-align: center; /* Центрируем заголовок */
+    }
+  
+    .title {
+      font-size: 24px; /* Уменьшаем размер шрифта заголовка */
+      bottom: 100px; /* Уменьшаем отступ снизу */
+    }
+  
+    .grid {
+      display: flex; /* Используем flex для упрощения расположения */
+      flex-direction: column; /* Устанавливаем вертикальное направление */
+      align-items: center; /* Центрируем элементы по горизонтали */
+      position: relative; /* Сбрасываем позиционирование */
+      margin: 0 auto; /* Центрируем сетку */
+      margin-bottom: 1100px;
+    }
+  
+    .grid div {
+      margin: 10px 0; /* Добавляем отступы между элементами */
+      
+    }
+  
+
+  .item-1 {
+    position: absolute;
+    bottom: 80px;
+left: 480px;
+max-width: 400px;
+
+  }
+  .item-2 {
+    position: absolute;
+    top: 290px;
+left: 140px;
+max-width: 50px;
+
+  }
+  .item-3 {
+    position: absolute;
+    top: 100px;
+left: 340px;
+max-width: 50px;
+
+  }
+  .item-4 {
+    position: absolute;
+    top: 490px;
+left: -50px;
+max-width: 50px;
+
+  }
+  .item-5 {
+    position: absolute;
+    top: 690px;
+    right: 180px;
+max-width: 50px;
+
+  }
+  .item-6 {
+    position: absolute;
+    top: 300px;
+left: 150px;
+max-width: 50px;
+
+  }  
+  .item-7 {
+    position: absolute;
+    top: 1080px;
+right: 465px;
+max-width: 300px;
+
+  }
+  .item-8 {
+    position: absolute;
+    top: 1090px;
+    right: 465px;
+max-width: 300px;
+
+  }
+    .grid img {
+      width: 100%; /* Устанавливаем ширину изображения на 100% */
+      height: auto; /* Автоматическая высота для сохранения пропорций */
+      border-radius: 16px; /* Скругляем углы */
+    }
+
+    /* 4 блок */
+  .service-block_2 {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение */
+    align-items: center; /* Центрируем карточки */
+    margin-bottom: 20px; /* Уменьшаем отступ сверху */
+    bottom: 30px;
+  }
+
+  .service-header-content_4,
+  .service-header-content_4-1,
+  .service-header-content_4-2 {
+    width: 90%; /* Ширина карточек */
+    height: 200px;
+    margin: 10px 0; /* Отступы между карточками */
+    background-color: #fff; /* Фон карточек */
+    border-radius: 16px; /* Скругление углов */
+    border: 1px solid #000; /* Граница карточек */
+    padding: 10px; /* Внутренние отступы */
+    position: absolute;
+    left: 10px;
+  }
+  .service-header-content_4-1 {
+    margin-top: 50px;
+  }
+  .service-header-content_4-2 {
+    margin-top: 90px;
+  }
+
+  .service-header-title_4,
+  .service-header-title_4-1,
+  .service-header-title_4-2 {
+    text-align: center; /* Заголовки слева */
+    font-size: 20px; /* Размер шрифта заголовков */
+    font-weight: bold; /* Жирный шрифт */
+    border-bottom: 4px solid #ff6b00; /* Подчеркивание */
+    margin-bottom: 0px; /* Отступ под заголовком */
+    position: relative;
+    left: 0px;
+    top: -80px;
+  }
+
+
+  .blurry-circle-4-2 {
+    width: 430px; /* Ширина круга */
+    height: 200px; /* Высота круга */
+    background-color: #B6C1E4; /* Цвет фона */
+    border-radius: 12%; /* Скругление углов */
+    filter: blur(14px); /* Размытие */
+    position: absolute; /* Абсолютное позиционирование для фона */
+    top: 640px;
+    left: 5px;
+    z-index: -1; /* Фон остается позади */
+  }
+  .blurry-circle-4-1 {
+    width: 430px; /* Ширина круга */
+    height: 220px; /* Высота круга */
+    background-color: #B6C1E4; /* Цвет фона */
+    border-radius: 12%; /* Скругление углов */
+    filter: blur(14px); /* Размытие */
+    position: absolute; /* Абсолютное позиционирование для фона */
+    top: 320px;
+    left: 5px;
+    z-index: -1; /* Фон остается позади */
+  }
+  .blurry-circle-4 {
+    width: 430px; /* Ширина круга */
+    height: 220px; /* Высота круга */
+    background-color: #B6C1E4; /* Цвет фона */
+    border-radius: 12%; /* Скругление углов */
+    filter: blur(14px); /* Размытие */
+    position: absolute; /* Абсолютное позиционирование для фона */
+    top: 0px;
+    left: 5px;
+    z-index: -1; /* Фон остается позади */
+  }
+    .service-header-text-4 {
+      font-size: 14px;
+      position: relative;
+      bottom: 50px;
+    }
+    /* Подвал сайта  */
+    footer {
+      background-color: #333;
+      color: #ffffff;
+      padding: 20px;
+      display: flex;
+      flex-direction: column; /* Изменяем на вертикальное расположение для мобильных */
+      align-items: center; /* Центрируем элементы */
+      width: 100%;
+    }
+    
+    .footer-content {
+      display: flex;
+      flex-direction: column; /* Вертикальное расположение для мобильных */
+      align-items: center; /* Центрируем элементы */
+    }
+    
+    .footer-map {
+      max-width: 100%;
+      left: -15px;; /* Устанавливаем ширину карты на 100% */
+  
+    }
+    
+    .ffz {
+      text-align: center; /* Центрируем текст */
+      font-size: 16px; /* Уменьшаем размер шрифта для мобильных */
+      left:-15px;
+      max-width: 350px;
+    }
+    
+    .footer-icons-container {
+      display: flex; /* Используем flexbox для иконок */
+      justify-content: center; /* Центрируем иконки */
+      flex-wrap: wrap; /* Позволяем переносить иконки на новую строку */
+      margin-top: 10px; /* Отступ сверху для иконок */
+    }
+    
+    .footer-icon-group {
+      display: flex; /* Используем flexbox для группы иконок */
+      align-items: center; /* Центрируем иконки и текст по вертикали */
+      margin: 0 10px; /* Отступы между группами иконок */
+    }
+    
+    .footer-icon {
+      width: 24px; /* Уменьшаем размер иконок */
+      height: 24px; /* Уменьшаем размер иконок */
+      margin-right: 5px; /* Отступ справа для иконки */
+      margin-bottom: 10px;
+    }
+  }
+  

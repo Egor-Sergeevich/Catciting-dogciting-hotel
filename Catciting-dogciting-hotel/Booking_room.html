@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Booking_room.css">
+</head>
+<body>
+  <header>
+    <div class="burger" id="burger">
+      &#9776;
+      <!-- Символ бургер-меню -->
+    </div>
+    <a href="Prime.html" class="logo">
+      <img src="Icon/image.png" alt="Логотип">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="hotel.html">Отель</a></li>
+        <li><a href="Grooming.html">Груминг</a></li>
+        <li class="has-dropdown">
+          <a href="#">Наши услуги</a>
+          <ul class="dropdown">
+            <li><a href="Babysitter_for_cats.html">Кэтситинг</a></li>
+            <li><a href="Dog_walking.html">Выгул собак</a></li>
+            <li><a href="Babysitter_for_dogs.html">Няня для собак</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="right-actions">
+        <a href="Order_Menu.html"><button class="order-btn">Заказать</button></a>
+        <a href="Personal_account.html" class="profile-icon">
+          <img src="Icon/image 148.png" alt="Kabinet">
+        </a>
+      </div>
+    </nav>
+  </header>
+  <script>
+    document.getElementById('burger').addEventListener('click', function() {
+      const nav = document.querySelector('nav');
+      nav.classList.toggle('active'); // Переключаем класс для показа/скрытия меню
+    });
+  </script>
+
+      <!-- 1 блок -->
+      <div class="container">
+        <div class="steps">
+            <div class="step active" data-step="1">1. Ваш заказ</div>
+            <div class="step" data-step="2">2. Данные</div>
+            <div class="step" data-step="3">3. Услуги</div>
+            <div class="step" data-step="4">4. Оплата</div>
+            <div class="line"></div>
+        </div>
+        
+        <div class="content">
+<!-- 1 -->
+<div class="block active">
+    <div id="dataset">
+        <h2>Даты</h2>
+        <input type="date" id="date-input" placeholder="Выбрать даты">
+    </div>
+    <div class="room-cards-container">
+        <h2>Виды номеров</h2>
+        <p id="charset">Выберите подходящий для вас номер</p>
+        <div class="room-cards">
+            <div class="room-card">
+                <div class="room-image">
+                    <img src="photo/Отель 10.png" alt="Comfort Room">
+                </div>
+                <div class="room-info">
+                    <h3>Комфорт</h3>
+                    <p class="price">От 1300 в день</p>
+                </div>
+                <div class="room-features">
+                    <p>Номер из ударопрочного стекла для собак малых, средних пород и кошек.</p>
+                    <p>Размер номера: 1,5 х 1.2 х 2,1 метра</p>
+                    <p>Вместимость: собака до 20кг или 2 питомца среднего размера</p>
+                    <ul>
+                        <li>Активный распорядок дня</li>
+                        <li>Питомец под присмотром</li>
+                        <li>Хорошая вместимость</li>
+                        <li>Регулярная уборка</li>
+                    </ul>
+                </div>
+                <div class="book-button-container">
+                    <button class="book-button" onclick="toggleCounter(this)">Заказать</button>
+                    <div class="counter" style="opacity: 0;"></div> <!-- Убедитесь, что элемент существует -->
+                </div>
+            </div>
+            <!-- Другие карточки номеров -->
+            <div class="room-card">
+                <div class="room-image">
+                    <img src="photo/Отель 11.png" alt="Family Room">
+                </div>
+                <div class="room-info">
+                    <h3>Семейный</h3>
+                    <p class="price">От 1700 в день</p>
+                </div>
+                <div class="room-features">
+                    <p>Комната с кроваткой и окном. Более просторная комната для питомца.</p>
+                    <p>Размер номера: 2 х 3 х 4 метра</p>
+                    <p>Вместимость: 2 собаки до 20кг или до 4 питомцев среднего размера</p>
+                    <ul>
+                        <li>Надежная шумоизоляция</li>
+                        <li>Подходит для индивидуалов</li>
+                        <li>Просторный номер</li>
+                        <li>Подходит семьям</li>
+                    </ul>
+                </div>
+                <div class="book-button-container">
+                    <button class="book-button" onclick="toggleCounter(this)">Заказать</button>
+                    <div class="counter" style="opacity: 0;"></div> <!-- Убедитесь, что элемент существует -->
+                </div>
+            </div>
+            <div class="room-card">
+                <div class="room-image">
+                    <img src="photo/Отель 12.png" alt="Family Plus Room">
+                </div>
+                <div class="room-info">
+                    <h3>Семейный плюс</h3>
+                    <p class="price">От 2100 в день</p>
+                </div>
+                <div class="room-features">
+                    <p>Комната с кроваткой и окном. Как семейный только больше.</p>
+                    <p>Размер номера: 3 х 4 х 4 метра</p>
+                    <p>Вместительность: 4 собаки до 20кг или до 6 ваших питомцев среднего размера</p>
+                    <ul>
+                        <li>Просторный номер</li>
+                        <li>Питомец под присмотром</li>
+                        <li>Хорошая вместимость</li>
+                        <li>Подходит семьям</li>
+                    </ul>
+                </div>
+                <div class="book-button-container">
+                    <button class="book-button" onclick="toggleCounter(this)">Заказать</button>
+                    <div class="counter" style="opacity: 0;"></div> <!-- Убедитесь, что элемент существует -->
+                </div>
+            </div>
+        </div>
+        <div id="counter" class="counter"></div>
+                    <script>
+             let counters = [];
+
+function toggleCounter(button) {
+    console.log("Кнопка нажата");
+    const counter = button.parentElement.querySelector(".counter");
+    const index = counters.indexOf(counter);
+
+    if (index === -1) {
+        counter.textContent = "1"; // Устанавливаем начальное значение
+        counter.style.opacity = "1"; // Делаем видимым
+        counter.classList.add("counter-animation");
+        counters.push(counter);
+    } else {
+        let currentCount = parseInt(counter.textContent, 10); // Получаем текущее значение
+        currentCount++;
+        counter.textContent = currentCount.toString(); // Обновляем текст
+        counter.style.opacity = "1"; // Убедитесь, что он виден
+    }
+
+    setTimeout(() => {
+        counter.classList.remove("counter-animation");
+    }, 1000);
+}
+                        </script>
+
+            </div>
+        </div>
+
+
+            <!-- 2 -->
+            <div class="block">
+
+                <div class="form-container">
+                    <h2 class="form-title">Введите ваши данные</h2>
+                    <form class="data-form">
+                        <label class="label-fio" for="fio">ФИО</label>
+                        <input class="input-fio" type="text" id="fio" name="fio" required>
+            
+                        <label class="label-phone" for="phone">Телефон</label>
+                        <input class="input-phone" type="tel" id="phone" name="phone" pattern="[0-9]*" required>
+            
+                        <label class="label-email" for="email">E-mail</label>
+                        <input class="input-email" type="email" id="email" name="email" required>
+            
+                        <h2 class="pet-title">Введите данные вашего питомца 
+                            <button type="button" class="add-pet-button">+</button></h2>
+                        <div class="pet-info-container">
+                            <div class="pet-info" id="pet-info-1">
+                                <label class="label-pet-type" for="pet-type-1">Питомец №1</label>
+                                <input class="input-pet-dog" type="radio" id="dog-1" name="pet-type-1" value="Собака">
+                                <label class="label-dog" for="dog-1">Собака</label>
+                                <input class="input-pet-cat" type="radio" id="cat-1" name="pet-type-1" value="Кошка" checked>
+                                <label class="label-cat" for="cat-1">Кошка</label>
+            
+                                <label class="label-nickname" for="nickname-1">Кличка</label>
+                                <input class="input-nickname" type="text" id="nickname-1" name="nickname-1" required>
+            
+                                <label class="label-birthdate" for="birthdate-1">Дата рождения</label>
+                                <input class="input-birthdate" type="date" id="birthdate-1" name="birthdate-1" required>
+            
+                                <label class="label-age" for="age-1">Возраст</label>
+                                <input class="input-age" type="number" id="age-1" name="age-1" required>
+            
+                                <label class="label-breed" for="breed-1">Порода</label>
+                                <input class="input-breed" type="text" id="breed-1" name="breed-1" required>
+            
+                                <label class="label-gender">Пол:</label>
+                                <input class="input-gender-male" type="radio" id="male-1" name="gender-1" value="Мальчик">
+                                <label class="label-male" for="male-1">Мальчик</label>
+                                <input class="input-gender-female" type="radio" id="female-1" name="gender-1" value="Девочка">
+                                <label class="label-female" for="female-1">Девочка</label>
+            
+                                <label class="label-vet-passport">Вет паспорт с отметкой о вакцинации</label>
+                                <input class="input-vet-passport" type="checkbox" id="vet-passport-1" name="vet-passport-1">
+            
+                                <label class="label-sterilization">Стерилизация/кастрация</label>
+                                <input class="input-sterilization" type="checkbox" id="sterilization-1" name="sterilization-1">
+            
+                                <label class="label-comment" for="comment-1">Комментарии:</label>
+                                <textarea class="textarea-comment" id="comment-1" name="comment-1" placeholder="Ваши комментарии..."></textarea>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            
+                <script>
+                    let petCount = 1;
+
+document.querySelector('.add-pet-button').addEventListener('click', function() {
+    petCount++;
+    
+    const petInfoContainer = document.querySelector('.pet-info-container');
+    
+    const newPetInfo = document.createElement('div');
+    newPetInfo.classList.add('pet-info');
+    newPetInfo.id = `pet-info-${petCount}`;
+    newPetInfo.innerHTML = `
+        <label class="label-pet-type" for="pet-type-${petCount}">Питомец №${petCount}</label>
+        <input class="input-pet-dog" type="radio" id="dog-${petCount}" name="pet-type-${petCount}" value="Собака">
+        <label class="label-dog" for="dog-${petCount}">Собака</label>
+        <input class="input-pet-cat" type="radio" id="cat-${petCount}" name="pet-type-${petCount}" value="Кошка" checked>
+        <label class="label-cat" for="cat-${petCount}">Кошка</label>
+
+        <label class="label-nickname" for="nickname-${petCount}">Кличка</label>
+        <input class="input-nickname" type="text" id="nickname-${petCount}" name="nickname-${petCount}" required>
+
+        <label class="label-birthdate" for="birthdate-${petCount}">Дата рождения</label>
+        <input class="input-birthdate" type="date" id="birthdate-${petCount}" name="birthdate-${petCount}" required>
+
+        <label class="label-age" for="age-${petCount}">Возраст</label>
+        <input class="input-age" type="number" id="age-${petCount}" name="age-${petCount}" required>
+
+        <label class="label-breed" for="breed-${petCount}">Порода</label>
+        <input class="input-breed" type="text" id="breed-${petCount}" name="breed-${petCount}" required>
+
+        <label class="label-gender">Пол:</label>
+        <input class="input-gender-male" type="radio" id="male-${petCount}" name="gender-${petCount}" value="Мальчик">
+        <label class="label-male" for="male-${petCount}">Мальчик</label>
+        <input class="input-gender-female" type="radio" id="female-${petCount}" name="gender-${petCount}" value="Девочка">
+        <label class="label-female" for="female-${petCount}">Девочка</label>
+
+        <label class="label-vet-passport">Вет паспорт с отметкой о вакцинации</label>
+        <input class="input-vet-passport" type="checkbox" id="vet-passport-${petCount}" name="vet-passport-${petCount}">
+
+        <label class="label-sterilization">Стерилизация/кастрация</label>
+        <input class="input-sterilization" type="checkbox" id="sterilization-${petCount}" name="sterilization-${petCount}">
+
+        <label class="label-comment" for="comment-${petCount}">Комментарии:</label>
+        <textarea class="textarea-comment" id="comment-${petCount}" name="comment-${petCount}" placeholder="Ваши комментарии..."></textarea>
+    `;
+    
+    petInfoContainer.appendChild(newPetInfo);
+});
+                </script>
+            </div>
+
+
+            <!-- 3 -->
+            <div class="block">
+                
+  <div class="service-container">
+    <h2 style="margin-top: 5px;">Дополнительные услуги</h2>
+    <div class="service-card">
+      <div class="service-image">
+        <img src="photo/Отель 9.jpg" alt="Добавь наши лакомства" style="height: 215px; margin: 10px 10px 10px 10px; position: relative;top: 5px;">
+      </div>
+      <div class="service-info">
+        <h3>Добавь наши лакомства</h3>
+        <p>Сами делаем сушёные лакомства. Производим в соответствии с ГОСТ из сертифицированного мяса; печень баранья, легкое говяжье, вымя, рубец. Делаем для себя и гостей отеля.</p>
+        <div class="service-options">
+          <button class="options-btn">Выбрать</button>
+          <div class="options-menu">
+            <div class="option" data-item="Говяжье вымя">Говяжье вымя</div>
+            <div class="option" data-item="Говяжий рубец">Говяжий рубец</div>
+            <div class="option" data-item="Баранья печень">Баранья печень</div>
+            <div class="option" data-item="Говяжье легкое">Говяжье легкое</div>
+          </div>
+        </div>
+        <div style="position: relative; left: 500px; font-size: 20px;"><strong>200р</strong></div>
+      </div>
+    </div>
+    <!-- 2 -->
+    <div class="service-card_1">
+      <div class="service-image">
+        <img src="photo/Отель 8.jpg" alt="Гигиенический груминг" style="position: relative;top: 5px;">
+      </div>
+      <div class="service-info">
+        <h3>Гигиенический груминг</h3>
+        <p>Вернём питомца с чистой и обновлённой шерстью. У нас есть весь спектр услуг ухода за питомцем: груминг, экспресс линька, триминг.</p>
+        <div class="service-options">
+          <button class="options-btn">Выбрать</button>
+          <div class="options-menu">
+            <div class="option-container">
+              <div class="option" data-item="Собака">Собака</div>
+              <div class="counter">
+                <button class="counter-btn">-</button>
+                <span class="counter-value">0</span>
+                <button class="counter-btn">+</button>
+              </div>
+            </div>
+            <div class="option-container">
+              <div class="option" data-item="Кошка">Кошка</div>
+              <div class="counter">
+                <button class="counter-btn">-</button>
+                <span class="counter-value">0</span>
+                <button class="counter-btn">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="position: relative; left: 500px; font-size: 20px;"><strong>990р</strong></div>
+      </div>
+    </div>  
+    <div class="blurry-circle3"></div>
+    <div class="blurry-circle4"></div>
+  </div>
+
+
+  <script>/// Добавляем обработчики событий для кнопок "Выбрать"
+    const optionsBtns = document.querySelectorAll('.options-btn');
+    const optionsMenus = document.querySelectorAll('.options-menu');
+    
+    optionsBtns.forEach((btn, index) => {
+      btn.addEventListener('click', () => {
+        optionsMenus[index].style.display = optionsMenus[index].style.display === 'none' ? 'block' : 'none';
+      });
+    });
+    
+    // Добавляем обработчики событий для опций в выпадающем меню
+    const options = document.querySelectorAll('.option');
+    
+    options.forEach((option) => {
+      option.addEventListener('click', () => {
+        const selectedItem = option.dataset.item;
+        const serviceCard = option.closest('.service-card');
+        const selectedItemElement = serviceCard.querySelector(`.selected-item[data-item="${selectedItem}"]`);
+    
+        if (selectedItemElement) {
+          selectedItemElement.querySelector('.counter-value').textContent = selectedItemElement.querySelector('.counter-value').textContent;
+        } else {
+          const newSelectedItem = document.createElement('div');
+          newSelectedItem.classList.add('selected-item');
+          newSelectedItem.dataset.item = selectedItem;
+          newSelectedItem.innerHTML = `
+            <span>${selectedItem}</span>
+            <div class="counter">
+              <button class="counter-btn">-</button>
+              <span class="counter-value">1</span>
+              <button class="counter-btn">+</button>
+            </div>
+          `;
+          serviceCard.querySelector('.service-options').appendChild(newSelectedItem);
+    
+          const counterBtns = newSelectedItem.querySelectorAll('.counter-btn');
+          const counterValue = newSelectedItem.querySelector('.counter-value');
+    
+          counterBtns.forEach((btn) => {
+            btn.addEventListener('click', () => {
+              const value = parseInt(counterValue.textContent);
+              counterValue.textContent = btn.textContent === '+' ? value + 1 : Math.max(1, value - 1);
+            });
+          });
+        }
+    
+        option.closest('.options-menu').style.display = 'none';
+      });
+    });
+
+
+    options.forEach((option) => {
+      option.addEventListener('click', () => {
+        const selectedItem = option.dataset.item;
+        const serviceCard = option.closest('.service-card_1');
+        const selectedItemElement = serviceCard.querySelector(`.selected-item[data-item="${selectedItem}"]`);
+    
+        if (selectedItemElement) {
+          selectedItemElement.querySelector('.counter-value').textContent = selectedItemElement.querySelector('.counter-value').textContent;
+        } else {
+          const newSelectedItem = document.createElement('div');
+          newSelectedItem.classList.add('selected-item');
+          newSelectedItem.dataset.item = selectedItem;
+          newSelectedItem.innerHTML = `
+            <span>${selectedItem}</span>
+            <div class="counter">
+              <button class="counter-btn">-</button>
+              <span class="counter-value">1</span>
+              <button class="counter-btn">+</button>
+            </div>
+          `;
+          serviceCard.querySelector('.service-options').appendChild(newSelectedItem);
+    
+          const counterBtns = newSelectedItem.querySelectorAll('.counter-btn');
+          const counterValue = newSelectedItem.querySelector('.counter-value');
+    
+          counterBtns.forEach((btn) => {
+            btn.addEventListener('click', () => {
+              const value = parseInt(counterValue.textContent);
+              counterValue.textContent = btn.textContent === '+' ? value + 1 : Math.max(1, value - 1);
+            });
+          });
+        }
+    
+        option.closest('.options-menu').style.display = 'none';
+      });
+    });
+    </script>
+            </div>
+
+
+            <!-- 4 -->
+            <div class="block">
+                <div class="payment-methods-container">
+                    <h2 class="payment-title">Способы оплаты</h2>
+                    
+                    <div class="payment-option">
+                        <input type="radio" id="payment-card-online" name="payment-method" class="payment-radio" value="card-online">
+                        <label for="payment-card-online" class="payment-label">
+                            Картой онлайн
+                            <span class="payment-icons">
+                                <img src="Icon/visa.png" alt="Visa" class="payment-icon">
+                            </span>
+                        </label>
+                    </div>
+            
+                    <div class="payment-option">
+                        <input type="radio" id="payment-fast-system" name="payment-method" class="payment-radio" value="fast-system">
+                        <label for="payment-fast-system" class="payment-label">
+                            Система быстрых платежей
+                            <span class="payment-icons">
+                                <img src="Icon/sbp.png" alt="Система быстрых платежей" class="payment-icon">
+                            </span>
+                        </label>
+                    </div>
+            
+                    <div class="privacy-policy-container">
+                        <input type="checkbox" id="privacy-policy" class="privacy-checkbox">
+                        <label for="privacy-policy" class="privacy-label">Я ознакомлен и принимаю Политику Конфиденциальности</label>
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="buttonss">
+            <button class="prev-button">Назад</button>
+            <button class="next-button">Далее</button>
+        </div>
+
+    <script>
+      let currentStep = 1;
+const totalSteps = 4;
+
+const steps = document.querySelectorAll('.step');
+const blocks = document.querySelectorAll('.block');
+const line = document.querySelector('.line');
+const nextButton = document.querySelector('.next-button');
+const prevButton = document.querySelector('.prev-button');
+const dateInput = document.getElementById('date-input');
+const roomCards = document.querySelectorAll('.room-card');
+let selectedRoom = null;
+
+// Функция для проверки состояния кнопки "Далее"
+function checkNextButtonState() {
+    const dateSelected = dateInput.value !== '';
+    const roomSelected = selectedRoom !== null;
+
+    nextButton.disabled = !(dateSelected && roomSelected);
+}
+
+// Обработчик событий для выбора даты
+dateInput.addEventListener('change', checkNextButtonState);
+
+// Обработчик событий для выбора номера
+roomCards.forEach(card => {
+    const button = card.querySelector('.book-button');
+    button.addEventListener('click', () => {
+        // Снимаем выделение со всех карточек
+        roomCards.forEach(c => c.classList.remove('selected'));
+        // Выделяем текущую карточку
+        card.classList.add('selected');
+        selectedRoom = card; // Сохраняем выбранную карточку
+        checkNextButtonState(); // Проверяем состояние кнопки "Далее"
+    });
+});
+
+nextButton.addEventListener('click', () => {
+    const dateSelected = dateInput.value !== '';
+    const roomSelected = selectedRoom !== null;
+
+    // Проверка условий перед переходом к следующему шагу
+    if (!dateSelected) {
+        alert('Пожалуйста, выберите дату.');
+        return;
+    }
+
+    if (!roomSelected) {
+        alert('Пожалуйста, выберите вид номера.');
+        return;
+    }
+
+    if (currentStep < totalSteps) {
+        currentStep++;
+        updateStep();
+    }
+});
+
+prevButton.addEventListener('click', () => {
+    if (currentStep > 1) {
+        currentStep--;
+        updateStep();
+    }
+});
+
+function updateStep() {
+    blocks.forEach(block => block.classList.remove('active'));
+    blocks[currentStep - 1].classList.add('active');
+
+    steps.forEach(step => step.classList.remove('active'));
+    steps[currentStep - 1].classList.add('active');
+
+    const stepWidth = 100 / totalSteps;
+    line.style.left = `${(currentStep - 1) * stepWidth}%`;
+    line.style.width = `${stepWidth}%`;
+
+    // Проверяем состояние кнопки "Далее" при переходе
+    checkNextButtonState();
+}
+    </script>
+    </div>
+</body>
+    <!-- 
+    Подвал сайта -->
+    <div class="foooter">
+    <footer>
+        <div class="footer-content">
+          <div class="footer-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.2028318455594!2d37.61962231588116!3d55.75399998055546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1670000000000!5m2!1sru!2sru" width="450" height="250" style="border:0;"    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+      
+          <div class="ffz">
+            <div class="logo_1"><img src="Icon/image.png" alt=""></div>
+          <p >brandnamesss@168gmail.com</p>
+          <p>+ 7 903 451 23 54</p>
+          <p>Ул.Кирова 12к5, Москва</p>
+          <div class="footer-icons-container">
+            <div class="footer-icon-group">
+              <img src="Icon/nu.png" alt="Telegram" class="footer-icon">
+              <span>@catsdogs5501/бот</span>
+            </div>
+            <div class="footer-icon-group">
+              <img src="Icon/wt.png" alt="WhatsApp" class="footer-icon">
+              <span>@catogs5901</span>
+            </div>
+            <div class="footer-icon-group">
+              <img src="Icon/insta.png" alt="Instagram" class="footer-icon">
+              <span>@catosik01</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      </footer>
+
+
+</html>

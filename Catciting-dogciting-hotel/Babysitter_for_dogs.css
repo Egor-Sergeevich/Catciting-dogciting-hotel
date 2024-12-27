@@ -1,0 +1,1302 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  .top-block {
+    width: 100%;
+    height: 200px;
+    background-color: transparent;
+    margin-bottom: 20px;
+  }
+  
+  /* Стили для шапки */
+  header {
+    background-color: #084887;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .burger {
+    display: none; /* Скрываем бургер-меню по умолчанию */
+  }
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    position: relative;
+    margin-right: 10px;
+  }
+  
+  nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .has-dropdown:hover .dropdown {
+    display: block;
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #084887;
+    min-width: 160px;
+    z-index: 1;
+    padding: 10px 0;
+    margin-top: 15px;
+    border-radius: 10px;
+  }
+  
+  .dropdown li {
+    margin: 0;
+  }
+  
+  .dropdown li a {
+    display: block;
+    padding: 10px 20px;
+  }
+  
+  .order-btn {
+    background-color: #F58A07;
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    cursor: pointer;
+    border-radius: 13px;
+    margin: 10px;
+  }
+  
+  .profile-icon {
+    color: #fff;
+    font-size: 24px;
+    margin-left: 20px;
+  }
+  
+  .right-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Основной блок */
+  /* Стили для главного контента */
+  .circle_1 {
+    position: absolute;
+    top: 700px;
+    right: 990px;
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+  }
+  
+  .blurry-circle2 {
+    position: absolute;
+    top: 650px;
+    right: 1080px;
+    width: 150px;
+    height: 150px;
+    background-color: #B6C1E4;
+    border-radius: 50%;
+    filter: blur(10px);
+    z-index: -1;
+  }
+    .blurry-circle3 {
+      position: absolute;
+      top: 450px;
+      right: 80px;
+      width: 150px;
+      height: 150px;
+      background-color: #B6C1E4;
+      border-radius: 50%;
+      filter: blur(10px);
+      z-index: -1;
+    }
+    .blurry-circle4 {
+      position: absolute;
+      top: 760px;
+      right: 280px;
+      width: 100px;
+      height: 100px;
+      background-color: #B6C1E4;
+      border-radius: 50%;
+      filter: blur(10px);
+      z-index: -1;
+    }
+  
+   .cont {
+    position: relative;
+    display: flex;
+  }
+  
+  .left {
+    position: relative;
+    flex: 1;
+    align-items: start;
+    left: 70px;
+    top: 30px;
+
+  }
+  
+  .right {
+    font-size: 32px;
+
+   right: 100px;
+    position: relative;
+    top: 30px;
+  }
+  
+  .left h1 {
+    position: relative;
+    top: 60px;
+    font-size: 36px;
+    left: 20px;
+  }
+
+  .left h2 {
+    position: relative;
+    font-weight: normal;
+    font-size: 24px;
+    margin-top: 80px;
+    left: 20px;
+  }
+
+  .blue-line {
+    border-bottom: 3px solid  #909CC2;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+    top: 60px;
+    border-radius: 3px;
+
+  }
+
+  /* 2 блок */
+.block_2 {
+    position: relative;
+    top: 110px;
+}
+  .header_1 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .left_1 {
+    position: relative;
+    left: 170px;
+
+    font-weight: bold;
+    font-size: 36px;
+    margin-right: 100px;
+
+  }
+
+  .right_1 {
+    position: relative;
+
+    left: 120px;
+    display: flex;
+    align-items: center;
+  }
+
+  .right-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    height: 70px;
+  }
+
+  .right-box img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  /* 2 */
+  .block_2 {
+    position: relative;
+    top: 110px;
+}
+
+
+  .content_2 {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 300px;
+  }
+
+  .left_2 {
+    position: absolute;
+    left: 1130px;
+    top: 30px;
+    font-weight: bold;
+    font-size: 36px;
+    margin-right: 100px;
+
+  }
+
+  .right_2 {
+    position: relative;
+    top: 10px;
+    left: 230px;
+    display: flex;
+    align-items: center;
+  }
+
+  .right-box_2 {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    height: 70px;
+  }
+
+  .right-box img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+
+   /* 3 */
+   .block_2 {
+    position: relative;
+    top: 110px;
+}
+  .header_3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .content_3 {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-top: 150px;
+  }
+
+  .left_3 {
+    position: relative;
+    left: 250px;
+    font-weight: bold;
+    font-size: 36px;
+    margin-right: 100px;
+
+  }
+
+  .right_3 {
+    position: relative;
+    left: 200px;
+    display: flex;
+    align-items: center;
+  }
+
+  .right-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    height: 70px;
+  }
+
+
+  .right-box img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+
+  /* 4 */
+  .block_2 {
+    position: relative;
+    top: 110px;
+}
+  .header_4 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .content_4 {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-top: 30px;
+  }
+
+  .left_4 {
+    position: relative;
+    left: 1120px;
+    font-weight: bold;
+    font-size: 36px;
+    margin-right: 100px;
+  }
+
+  .right_4 {
+    position: relative;
+    left: 410px;
+    display: flex;
+    align-items: center;
+  }
+
+  .right-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    height: 70px;
+  }
+
+  .right-box img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  /* 5 */
+  .block_2 {
+    position: relative;
+    top: 110px;
+}
+  .header_5 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .content_5 {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-top: 30px;
+  }
+
+  .left_5 {
+    position: relative;
+    left: 130px;
+    font-weight: bold;
+    font-size: 36px;
+    margin-right: 100px;
+  }
+
+  .right_5 {
+    position: relative;
+    left: 80px;
+    display: flex;
+    align-items: center;
+  }
+
+  .right-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    height: 70px;
+  }
+
+  .right-box img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+ /* блок 3 */
+.team-container {
+  margin-bottom: 40px;
+  position: relative;
+  max-width: 1200px;
+  margin-left: 30px;
+  top: 20px;
+
+}
+
+.team-title-container {
+  align-items: center;
+}
+
+.team-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: block;
+
+  text-align: center;
+  justify-content: center;
+}
+
+.team-row {
+  display: flex;
+  justify-content: space-between;
+margin: 50px;
+margin-top: 20px;
+
+  align-items: center;
+
+  display: flex;
+}
+
+.team-member {
+  width: 48%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.team-member-photo {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 10px 0 0 10px;
+  margin-left: 25px;
+}
+
+.team-member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-member-info {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.team-member-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.team-member-rating {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.team-member-rating .star {
+  color: #ffd700;
+  font-size: 18px;
+  margin-right: 2px;
+}
+
+.team-member-breeds {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.team-member-stats {
+  font-size: 16px;
+  color: #666;
+}
+
+.show-more-btn {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  bottom: 30px;
+  background-color: #ff8c00;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+ /* блок 4 */
+ .title_4 {
+  text-align: center ;
+  font-size: 32px;
+  margin-bottom: 40px;
+ }
+ .title_44{
+  color: white;
+  margin-left: 40px;
+  font-size: 18px;
+ }
+ .discount-box {
+  position: relative;
+  left: 410px;
+  display: flex;
+
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+.orange-discount {
+  background-color: #ff8c00;
+  padding: 20px;
+  align-items: center;
+  width: 420px;
+  position: relative;
+  left: 395px;
+}
+
+.blue-discount {
+  background-color: #084887;
+  padding: 15px;
+  align-items: center;
+}
+
+.purple-discount {
+  background-color: #909CC2;
+  padding: 20px;
+  position: relative;
+  left: 395px;
+  align-items: center;
+  width: 420px;
+}
+
+.circle-image {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.arrow-indicator {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 24px;
+  letter-spacing: 20px
+}
+.circle_4 {
+  position: absolute;
+  top: 2000px;
+  right: 990px;
+  width: 200px;
+  height: 200px;
+  z-index: -1;
+}
+
+.blurry-circle4 {
+  position: absolute;
+  top: 1950px;
+  right: 1080px;
+  width: 150px;
+  height: 150px;
+  background-color: #B6C1E4;
+  border-radius: 50%;
+  filter: blur(10px);
+  z-index: -2;
+}
+.circle_5 {
+  position: absolute;
+  top: 1700px;
+  left: 990px;
+  width: 200px;
+  height: 200px;
+  z-index: -1;
+}
+
+.blurry-circle5 {
+  position: absolute;
+  top: 1650px;
+  left: 1000px;
+  width: 150px;
+  height: 150px;
+  background-color: #B6C1E4;
+  border-radius: 50%;
+  filter: blur(10px);
+  z-index: -2;
+}
+
+.blurry-circle6 {
+  position: absolute;
+  top: 2200px;
+  left: 1000px;
+  width: 150px;
+  height: 150px;
+  background-color: #B6C1E4;
+  border-radius: 50%;
+  filter: blur(10px);
+  z-index: -2;
+}
+.blurry-circle7 {
+  position: absolute;
+  top: 1600px;
+  left: 40px;
+  width: 150px;
+  height: 150px;
+  background-color: #B6C1E4;
+  border-radius: 50%;
+  filter: blur(10px);
+  z-index: -2;
+}
+
+/* 5 блок */
+.title_5 {
+  text-align: center ;
+  font-size: 32px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+ }
+.service-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.service-box_1 {
+  background-color: #909CC2;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  width: 180px; /* Ширина квадрата */
+  text-align: center;
+}
+
+.service-box {
+  background-color: #084887;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  width: 180px; /* Ширина квадрата */
+  text-align: center;
+}
+
+.service-title {
+  font-size: 18px;
+  color: white;
+
+}
+
+.service-price {
+  font-size:19px;
+  color: white;
+  position: relative;
+  top: 5px;
+
+}
+.service-price_1 {
+  font-size:19px;
+  color: white;
+  position: relative;
+  top: 25px;
+
+}
+
+
+/* 
+  Подвал сайта */
+  footer {
+    position: relative;
+    left: 0px;
+    top: 40px;
+    background-color: #333;
+    color: #202020;
+    padding: 20px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    width: 1216.5px;
+
+  }
+
+  .ffz {
+    position: relative;
+    align-items: start;
+    display: block;
+    color: white;
+    font-size: 20px;
+    right: 400px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-map {
+    position: relative;
+    left: 690px;
+    padding: 20px 10px 10px 10px;
+  }
+  
+  .footer-icons-container {
+    display: block;
+    position: relative;
+  }
+  
+  .footer-icon-group {
+    display: block;
+    align-items: start;
+    margin: 0 10px;
+    position: relative;
+    right: 10px;
+  }
+  
+  .footer-icon {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    bottom: -5px;
+  
+  }
+  
+  .footer-contact {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-contact .footer-icon {
+    margin-right: 5px;
+  }
+
+  @media (max-width: 430px) {
+    .burger {
+      display: block; /* Показываем бургер-меню на мобильных */
+      font-size: 28px;
+      cursor: pointer;
+    }
+    .profile-icon {
+      position: relative;
+           right: 20px;
+           top: 5px;
+          }
+    nav {
+      display: none; /* Скрываем меню навигации по умолчанию */
+      flex-direction: column; /* Меню будет вертикальным */
+      width: 100%; /* Ширина меню на весь экран */
+      background-color: #084887; /* Цвет фона для мобильного меню */
+      position: absolute; /* Позиционируем меню */
+      top: 80px; /* Расположение под шапкой */
+      left: 0;
+      z-index: 10; /* Убедимся, что меню поверх остальных элементов */
+      border-radius: 16px;
+      line-height:30px;
+      padding: 10px;
+      align-items: start;
+    }
+  
+    nav.active {
+      display: flex; /* Показываем меню при активации */
+    }
+  
+    nav ul {
+      flex-direction: column; /* Вертикальное расположение элементов меню */
+      width: 50%; /* Ширина списка на весь экран */
+      margin-bottom: 10px;
+      right: 70px;
+  
+    }
+    .dropdown {
+      line-height:19px;
+    }
+  
+    nav li {
+      margin: 0; /* Убираем отступы между пунктами меню */
+    }
+  
+    .right-actions {
+      flex-direction: column; /* Вертикальное расположение кнопок */
+      align-items: flex-start; /* Выравнивание по левому краю */
+    }
+  
+    .order-btn { 
+      margin: 5px 0; /* Отступы между кнопками */
+    }
+    /* 1 блок */
+    .cont {
+      flex-direction: column; /* Вертикальное расположение элементов */
+      align-items: center; /* Центрируем элементы по горизонтали */
+      padding: 10px; /* Уменьшаем отступы */
+    }
+  
+    .left {
+      align-items: center; /* Центрируем текст */
+      left: -20px; /* Убираем смещение */
+      text-align: center; /* Центрируем текст */
+      margin-bottom: 20px; /* Отступ снизу для разделения с изображением */
+      position: relative;
+     top: -30px;
+    }
+  
+    .left h1 {
+      font-size: 24px; /* Уменьшаем размер заголовка */
+      margin-bottom: 0px; /* Отступы сверху и снизу */
+    }
+  
+    .left h2 {
+      font-size: 20px; /* Уменьшаем размер подзаголовка */
+      margin: 10px 0; /* Отступы сверху и снизу */
+      position: relative;
+     top: 60px;
+    }
+  
+    .right {
+      max-width: 200px; /* Ширина изображения на всю ширину */
+      display: flex; /* Используем флекс для центрирования */
+      justify-content: center; /* Центрируем изображение */
+      margin-bottom: 20px; /* Отступ снизу */
+      position: relative;
+      left: 0px;
+    }
+  
+    .right img {
+      max-width: 400px; /* Ширина изображения на всю ширину родителя */
+      height: auto; /* Автоматическая высота для сохранения пропорций */
+      border-radius: 16px; /* Скругляем углы изображения */
+    }
+  
+    .circle_1 {
+      position: relative; /* Убираем абсолютное позиционирование для мобильной версии */
+      top: 0; /* Убираем смещение */
+      right: 0; /* Убираем смещение */
+      width: 130px; /* Уменьшаем размер круга */
+      height: 130px; /* Уменьшаем размер круга */
+      margin-top: -50px; /* Поднимаем круг вверх */
+      z-index: -1; /* Сохраняем порядок слоев */
+    }
+  
+    .blurry-circle2,
+    .blurry-circle3,
+    .blurry-circle4 {
+      position: relative; /* Убираем абсолютное позиционирование для размытых кругов */
+      margin-top: -50px; /* Поднимаем круги вверх */
+      z-index: -1; /* Сохраняем порядок слоев */
+    }
+  
+    .blurry-circle2 {
+      width: 100px; /* Уменьшаем размер размытых кругов */
+      height: 100px;
+      margin-left: -30px; /* Центрируем круг */
+    }
+  
+    .blurry-circle3 {
+      width: 100px; /* Уменьшаем размер размытых кругов */
+      height: 100px;
+      margin-left: 10px; /* Центрируем круг */
+    }
+  
+    .blurry-circle4 {
+      width: 80px; /* Уменьшаем размер размытых кругов */
+      height: 80px;
+      margin-left: 50px; /* Центрируем круг */
+    }
+  
+    .blue-line {
+      width: 90%; /* Уменьшаем ширину линии */
+      margin: 5px auto; /* Центрируем линию с отступами */
+    }
+    /* 2 блок */
+    .block2{
+position: relative;
+bottom: 100px;
+left: 10px;
+    }
+    .block_2,
+  .block_3,
+  .block_4,
+  .block_5 {
+    position: relative; /* Убираем абсолютное позиционирование */
+    top: 0; /* Убираем смещение сверху */
+    margin: 20px 0; /* Добавляем отступы между блоками */
+    display: flex; /* Используем флекс для выравнивания */
+    flex-direction: column; /* Вертикальное расположение элементов */
+    align-items: center; /* Центрируем элементы по горизонтали */
+  }
+
+  .header_1,
+  .header_3,
+  .header_4,
+  .header_5 {
+    font-size: 24px; /* Уменьшаем размер заголовка */
+    margin-bottom: 10px; /* Уменьшаем отступ снизу */
+  }
+
+  .content,
+  .content_2,
+  .content_3,
+  .content_4,
+  .content_5 {
+    display: flex; /* Используем флекс для выравнивания */
+    flex-direction: column; /* Вертикальное расположение элементов */
+    align-items: center; /* Центрируем элементы по горизонтали */
+    margin-top: 10px; /* Уменьшаем отступ сверху */
+    width: 100%; /* Задаем ширину для содержимого */
+  }
+  .content_2{
+    position: relative;
+    bottom: 10px;
+  }
+  .left_1,
+  .left_2,
+  .left_3,
+  .left_4,
+  .left_5 {
+    font-size: 24px; /* Уменьшаем размер текста */
+    margin-bottom: 10px; /* Отступ снизу */
+    text-align: center; /* Центрируем текст */
+  }
+  .left_1{
+    position: relative;
+    left: 40px;
+
+  }
+  .left_2{
+    position: relative;
+    left: -110px;
+    top: 10px;
+  }
+  .left_3{
+    position: relative;
+    left: 40px;
+  }
+  .left_4{
+    position: relative;
+    left: 40px;
+    top: 0px;
+  }
+  .left_5{
+    position: relative;
+    left: 40px;
+  }
+  .right_1,
+  .right_2,
+  .right_3,
+  .right_4,
+  .right_5 {
+    display: flex; /* Используем флекс для выравнивания */
+    flex-direction: column; /* Вертикальное расположение элементов */
+    align-items: center; /* Центрируем элементы по вертикали */
+    justify-content: center; /* Центрируем элементы по горизонтали */
+    margin: 0; /* Убираем отступы */
+  }
+  .right_1{
+    position: relative;
+    left: -10px;
+  }
+  .right_2{
+    position: relative;
+    left: -160px;
+  }
+  .right_3{
+    position: relative;
+    left: -10px;
+  }
+  .right_4{
+    position: relative;
+    left: -10px;
+  }
+  .right_5{
+    position: relative;
+    left: -10px;
+  }
+
+  .right-box {
+    display: flex; /* Используем флекс для выравнивания */
+    align-items: center; /* Центрируем элементы по вертикали */
+    border: 1px solid #ccc; /* Граница */
+    padding: 10px; /* Отступы внутри блока */
+    border-radius: 10px; /* Скругление углов */
+    height: auto; /* Автоматическая высота для адаптивности */
+    width: 90%; /* Ширина блока */
+  }
+
+  .right-box img {
+    width: 50px; /* Уменьшаем размер изображения */
+    height: 50px; /* Уменьшаем размер изображения */
+    border-radius: 50%; /* Скругляем изображение */
+    margin-right: 10px; /* Отступ справа */
+  }
+
+  /* 3 блок */
+.team-container {
+  margin-bottom: 40px;
+  position: relative;
+  max-width: 100%; /* Увеличиваем ширину для мобильных */
+  padding: 0 15px; /* Добавляем отступы для мобильных */
+  top: -70px;
+  right: 15px;
+}
+
+.team-title-container {
+  align-items: center;
+}
+
+.team-title {
+  font-size: 24px; /* Уменьшаем размер заголовка */
+  font-weight: bold;
+  margin-bottom: 20px;
+  left: 110px;
+  text-align: center;
+}
+
+.team-row {
+  display: flex;
+  flex-direction: column; /* Меняем на колонку для мобильных */
+  align-items: center; /* Центрируем элементы */
+  margin: 0; /* Убираем внешние отступы */
+}
+
+.team-member {
+  width: 100%; /* Занимаем всю ширину */
+  max-width: 400px; /* Ограничиваем ширину для больших экранов */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.team-member-photo {
+  width: 80px; /* Уменьшаем размер фото */
+  height: 80px; /* Уменьшаем размер фото */
+  overflow: hidden;
+  border-radius: 10px 0 0 10px;
+  margin-left: 15px; /* Уменьшаем отступ */
+}
+
+.team-member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-member-info {
+  flex-grow: 1;
+  padding: 10px; /* Уменьшаем отступы */
+}
+
+.team-member-name {
+  font-size: 20px; /* Уменьшаем размер имени */
+  font-weight: bold;
+  margin-bottom: 5px; /* Уменьшаем отступ */
+}
+
+.team-member-rating {
+  display: flex;
+  margin-bottom: 5px; /* Уменьшаем отступ */
+}
+
+.team-member-rating .star {
+  color: #ffd700;
+  font-size: 16px; /* Уменьшаем размер звезд */
+  margin-right: 2px;
+}
+
+.team-member-breeds {
+  font-size: 14px; /* Уменьшаем размер текста */
+  margin-bottom: 5px; /* Уменьшаем отступ */
+}
+
+.team-member-stats {
+  font-size: 14px; /* Уменьшаем размер текста */
+  color: #666;
+}
+
+.show-more-btn {
+  display: block;
+  margin: 20px auto; /* Центрируем кнопку */
+  
+  background-color: #ff8c00;
+  color: #fff;
+  border: none;
+  padding: 10px 15px; /* Уменьшаем отступы */
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* 4 блок */
+.discount-boxx {
+  position: relative;
+  bottom: 50px;
+}
+.title_4 {
+  font-size: 24px; /* Уменьшаем размер заголовка */
+  margin-bottom: 0px; /* Уменьшаем отступ снизу */
+  position: relative;
+  bottom: 40px;
+  right: 5px;
+}
+
+.discount-box {
+  position: relative; /* Убираем абсолютное позиционирование */
+  left: 0; /* Убираем смещение */
+  margin: 0 auto; /* Центрируем блоки */
+  width: 200px; /* Уменьшаем ширину блоков для мобильных */
+  display: flex; /* Используем флекс для выравнивания */
+  flex-direction: row; /* Горизонтальное расположение элементов */
+  align-items: center; /* Центрируем элементы по вертикали */
+  padding: 10px; /* Уменьшаем отступы внутри блока */
+}
+
+.orange-discount,
+.blue-discount,
+.purple-discount {
+  width: 89%; /* Устанавливаем ширину 100% для всех блоков */
+  padding: 10px; /* Уменьшаем отступы */
+  margin-bottom: 10px; /* Добавляем отступы между блоками */
+}
+
+.circle-image {
+  width: 50px; /* Уменьшаем размер изображения */
+  height: 50px; /* Уменьшаем размер изображения */
+  margin-right: 10px; /* Отступ справа */
+}
+
+.arrow-indicator {
+  font-size: 20px; /* Уменьшаем размер стрелки */
+  margin: 10px 0; /* Увеличиваем отступы сверху и снизу */
+  margin-left: 10px;
+}
+
+.circle_4,
+.circle_5,
+.blurry-circle4,
+.blurry-circle5,
+.blurry-circle6,
+.blurry-circle7 {
+  position: static; /* Убираем абсолютное позиционирование для мобильной версии */
+  width: 50px; /* Уменьшаем размеры кругов */
+  height: 50px; /* Уменьшаем размеры кругов */
+  margin: 10px auto; /* Центрируем круги */
+  position: absolute;
+  top: 50px;
+  left: 20px;
+}
+
+.blurry-circle4,
+.blurry-circle5,
+.blurry-circle6,
+.blurry-circle7 {
+  filter: blur(5px); /* Уменьшаем эффект размытия */
+
+}
+/* 5 блок */
+.title_5 {
+  font-size: 24px; /* Уменьшаем размер заголовка */
+  margin-top: 20px; /* Уменьшаем отступ сверху */
+  margin-bottom: 20px; /* Уменьшаем отступ снизу */
+}
+
+.service-container {
+  display: flex; /* Используем флекс для выравнивания */
+  flex-direction: column; /* Вертикальное расположение элементов */
+  align-items: center; /* Центрируем элементы по горизонтали */
+}
+.service-box_1 {
+  height: 60px;
+}
+.service-box_1,
+.service-box {
+  width: 40%; /* Увеличиваем ширину блоков для мобильных */
+  margin: 10px 0; /* Убираем боковые отступы и оставляем только вертикальные */
+}
+
+.service-title {
+  font-size: 16px; /* Уменьшаем размер текста заголовка услуги */
+}
+
+.service-price,
+.service-price_1 {
+  font-size: 18px; /* Уменьшаем размер текста цены */
+}
+/* Подвал сайта */
+footer {
+  background-color: #333;
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Изменяем на вертикальное расположение для мобильных */
+  align-items: center; /* Центрируем элементы */
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column; /* Вертикальное расположение для мобильных */
+  align-items: center; /* Центрируем элементы */
+}
+
+.footer-map {
+  max-width: 100%;
+  left: -15px;; /* Устанавливаем ширину карты на 100% */
+
+}
+
+.ffz {
+  text-align: center; /* Центрируем текст */
+  font-size: 16px; /* Уменьшаем размер шрифта для мобильных */
+  left:-15px;
+  max-width: 350px;
+}
+
+.footer-icons-container {
+  display: flex; /* Используем flexbox для иконок */
+  justify-content: center; /* Центрируем иконки */
+  flex-wrap: wrap; /* Позволяем переносить иконки на новую строку */
+  margin-top: 10px; /* Отступ сверху для иконок */
+}
+
+.footer-icon-group {
+  display: flex; /* Используем flexbox для группы иконок */
+  align-items: center; /* Центрируем иконки и текст по вертикали */
+  margin: 0 10px; /* Отступы между группами иконок */
+}
+
+.footer-icon {
+  width: 24px; /* Уменьшаем размер иконок */
+  height: 24px; /* Уменьшаем размер иконок */
+  margin-right: 5px; /* Отступ справа для иконки */
+  margin-bottom: 10px;
+}
+  }

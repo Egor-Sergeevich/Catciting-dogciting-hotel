@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="Ptime.css">
+</head>
+
+<body>
+  <header>
+    <div class="burger" id="burger">
+      &#9776;
+      <!-- Символ бургер-меню -->
+    </div>
+    <a href="Prime.html" class="logo">
+      <img src="Icon/image.png" alt="Логотип">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="hotel.html">Отель</a></li>
+        <li><a href="Grooming.html">Груминг</a></li>
+        <li class="has-dropdown">
+          <a href="#">Наши услуги</a>
+          <ul class="dropdown">
+            <li><a href="Babysitter_for_cats.html">Кэтситинг</a></li>
+            <li><a href="Dog_walking.html">Выгул собак</a></li>
+            <li><a href="Babysitter_for_dogs.html">Няня для собак</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="right-actions">
+        <a href="Order_Menu.html"><button class="order-btn">Заказать</button></a>
+        <a href="Personal_account.html" class="profile-icon">
+          <img src="Icon/image 148.png" alt="Kabinet">
+        </a>
+      </div>
+    </nav>
+  </header>
+  <script>
+    document.getElementById('burger').addEventListener('click', function() {
+      const nav = document.querySelector('nav');
+      nav.classList.toggle('active'); // Переключаем класс для показа/скрытия меню
+    });
+  </script>
+    <div class="container">
+      <div class="top-block">
+        <div class="hero">
+          <div class="hero-text">
+            <h1>Выгул</h1>
+            <h1>Гостиница</h1>
+            <h1>Няня</h1>
+            <p>Могу отдыхать спокойно, потому что знаю, что мой питомец находится в хороших руках</p>
+            <div class="divider"></div>
+            <p>Работаем в Москве и московской области</p>
+          </div>
+          <!-- блок 1 -->
+          <div class="blurry-circle"></div>
+          <div class="photo-grid">
+            <div class="photo-item">
+              <img src="photo/prime 1.jpg" alt="Photo_1" class="photo photo_1">
+            </div>
+            <div class="photo-item">
+              <img src="photo/prime 2.jpg" alt="Photo_2" class="photo photo_2">
+            </div>
+            <div class="photo-item">
+              <img src="photo/prime 3.jpg" alt="Photo_3" class="photo photo_3">
+            </div>
+            <div class="photo-item">
+              <img src="photo/prime 4.jpg" alt="Photo_4" class="photo photo_4">
+            </div>
+            <div class="photo-item">
+              <img src="photo/prime 5.jpg" alt="Photo_5" class="photo photo_5">
+            </div>
+            <div class="photo-item">
+              <img src="photo/prime.jpg" alt="Photo_6" class="photo photo_6">
+            </div>
+          </div>
+          <div class="blurry-circle2"></div>
+        </div>
+
+
+        <!-- блок 2 -->
+        <!-- 1 -->
+        <h2 class="section-title">Наши услуги</h2>
+        <div class="bottom-block">
+          <div class="service-card">
+            <div class="card-content">
+              <div class="text-container">
+                <h3>Надо выгулить,<br>чтобы ждал счастливый<br>и довольный пес</h3>
+                <div class="custom-button-container">
+                  <span class="rectangle">Выгул для собак</span>
+                  <a href="Dog_walking.html" class="custom-buttonn">
+                    <div class="arrow-box">
+                      <i class="arrow right"></i>
+                    </div>
+                    Подробнее о выгулах
+                  </a>
+                </div>
+                <div class="image-container">
+                  <div class="arrow-image">
+                    <img src="photo/Главная.jpg" alt="Собака" class="dog-image">
+                  </div>
+                  <div class="blur-square"></div>
+                  <div class="blurry-circle3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="bottom-block-1">
+          <div class="service-card-1">
+            <div class="card-content-1">
+              <div class="text-container-1">
+                <h3>Уезжаю по работе/отпуск <br>и хочу быть спокоен <br>
+                  за питомца</h3>
+                <div class="custom-button-container-1">
+                  <span class="rectangle-1">Отель для питомцев</span>
+                  <a href="hotel.html" class="custom-buttonn-1">
+                    <div class="arrow-box-1">
+                      <i class="arrow right-1"></i>
+                    </div>
+                    Подробнее о отеле
+                  </a>
+                </div>
+                <div class="image-container-1">
+                  <div class="arrow-image-1">
+                    <img src="photo/Главная 1.jpg" alt="Собака" class="dog-image-1">
+                  </div>
+                  <div class="blurry-circle4"></div>
+                  <div class="blur-square-1"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="bottom-block-2">
+          <div class="service-card-2">
+            <div class="card-content-2">
+              <div class="text-container-2">
+                <h3>Надо временно посидеть<br> с собакой дома<br>
+                  пока хозяин в отъезде </h3>
+                <div class="custom-button-container-2">
+                  <span class="rectangle-2">Няня для собак</span>
+                  <a href="Babysitter_for_dogs.html" class="custom-buttonn-2">
+                    <div class="arrow-box-2">
+                      <i class="arrow right-2"></i>
+                    </div>
+                    Подробнее о няне
+                  </a>
+                </div>
+                <div class="image-container-2">
+                  <div class="arrow-image-2">
+                    <img src="photo/Главная 2.jpg" alt="Собака" class="dog-image-2">
+                  </div>
+                  <div class="blurry-circle5"></div>
+                  <div class="blur-square-2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- 4 -->
+        <div class="bottom-block-3">
+          <div class="service-card-3">
+            <div class="card-content-3">
+              <div class="text-container-3">
+                <h3>Надо временно посидеть<br> с котиком дома <br>
+                  пока хозяин в отъезде</h3>
+                <div class="custom-button-container-3">
+                  <span class="rectangle-3">Няня для котика</span>
+                  <a href="Babysitter_for_cats.html" class="custom-buttonn-3">
+                    <div class="arrow-box-3">
+                      <i class="arrow right-3"></i>
+                    </div>
+                    Подробнее о няне
+                  </a>
+                </div>
+                <div class="image-container-3">
+                  <div class="arrow-image-3">
+                    <img src="photo/Кэтситинг 6.jpg" alt="Собака" class="dog-image-3">
+                  </div>
+                  <div class="blur-square-3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- блок 3 -->
+<!-- блок 3 -->
+<div class="team-container">
+  <div class="team-title-container">
+    <h2 class="team-title">Наша команда</h2>
+  </div>
+  <div class="team-row">
+    <div class="team-member">
+      <div class="team-member-photo">
+        <img src="photo/Глав 1.png" alt="Виолетта М.">
+      </div>
+      <div class="team-member-info">
+        <h3 class="team-member-name">Виолетта М.</h3>
+        <div class="team-member-rating">
+          <i class="star"></i>
+          <i class="star"></i>
+          <i class="star"></i>
+          <i class="star"></i>
+          <i class="star"></i>
+        </div>
+        <div class="team-member-breeds">
+          Породы: Акита-ину, Английский бульдог, Бультерьер, Джек-рассел-терьер, Курцхаар, Лабрадор
+        </div>
+        <div class="team-member-stats">
+          <div>Выгулов: 123</div>
+          <div>Ситингов: 52</div>
+        </div>
+      </div>
+    </div>
+    <div class="team-member">
+      <div class="team-member-photo">
+        <img src="photo/Глав.png" alt="Евгений Д.">
+      </div>
+      <div class="team-member-info">
+        <h3 class="team-member-name">Евгений Д.</h3>
+        <div class="team-member-rating">
+          <i class="star"></i>
+          <i class="star"></i>
+          <i class="star"></i>
+          <i class="star"></i>
+          <i class="star"></i>
+        </div>
+        <div class="team-member-breeds">
+          Породы: Такса, Французский бульдог, Цвергпинчер, Чихуахуа, Шарпей, Дворняжка, Метис
+        </div>
+        <div class="team-member-stats">
+          <div>Выгулов: 48</div>
+          <div>Ситингов: 75</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="show-more-btn">
+    <a href="Team.html" style="color: white; text-decoration:none;">Показать ещё</a>
+  </button>
+</div>
+
+        <!-- блок 4 -->
+        <!-- 1 -->
+<div class="testimonials-container">
+  <h2 class="testimonials-title">Отзывы наших клиентов</h2>
+  <div class="testimonial-row">
+    <div class="testimonial">
+      <div class="testimonial-content">
+        <p class="testimonial-text">Кот был счастлив и не хотел возвращаться. Передержка сопровождалась
+          регулярными фото-видео отчетами, из содержания которых было ясно, что кот чувствует себя как дома.
+          Ирина добрая и хорошо ладит с животными.</p>
+        <div class="testimonial-author">
+          <h3 class="testimonial-name">Дмитрий Брайцев</h3>
+          <div class="testimonial-rating">
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial">
+      <div class="testimonial-content">
+        <p class="testimonial-text">Я очень довольна, нет слов, как я довольна, потому что оставляла возрастную
+          специфичную кошку (ориентал) впервые в жизни с чужим человеком на чужой территории. Постоянная связь,
+          подбадривание, отличный уход.</p>
+        <div class="testimonial-author">
+          <h3 class="testimonial-name">Диана Глушко</h3>
+          <div class="testimonial-rating">
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="testimonial-row-1">
+    <div class="testimonial-1">
+      <div class="testimonial-content-1">
+        <p class="testimonial-text-1">Наталья чудесная! Спасибо ей большой за гостеприимство для моей британки)
+          Всегда была на связи, писала про кошку, присылала фото и видео.</p>
+        <div class="testimonial-author-1">
+          <h3 class="testimonial-name-1">Александр Исаков</h3>
+          <div class="testimonial-rating-1">
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-1">
+      <div class="testimonial-content-1">
+        <p class="testimonial-text-1">Кот был счастлив и не хотел возвращаться. Передержка сопровождалась
+          регулярными фото-видео отчетами, из содержания которых было ясно, что кот чувствует себя как дома.</p>
+        <div class="testimonial-author-1">
+          <h3 class="testimonial-name-1">Джейс Веларион</h3>
+          <div class="testimonial-rating-1">
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+     <!-- блок 5 -->
+<div class="pet-review-wrapper">
+  <div class="pet-review-block">
+    <div class="pet-review-header">
+      <h3 class="pet-review-title">Мы №1 сервис по заботе о ваших любимцах в Москве</h3>
+      <div class="pet-review-rating">4.8/5</div>
+    </div>
+    <div class="pet-review-details">
+      <div class="pet-review-item">
+        <div class="pet-review-label">Оказанных услуг:</div>
+        <div class="pet-review-value">79113</div>
+      </div>
+      <div class="pet-review-item">
+        <div class="pet-review-label">Средняя оценка наших посетителей:</div>
+        <div class="pet-review-value">4.8/5</div>
+      </div>
+      <div class="pet-review-item">
+        <div class="pet-review-label">Довольных питомцев:</div>
+        <div class="pet-review-value">70819</div>
+      </div>
+    </div>
+  </div>
+  <div class="blurry-circle-1"></div>
+</div>
+
+<!-- Блок 6 -->
+<div class="faq-container">
+  <h2 class="faq_h2">Часто задаваемые вопросы</h2>
+  <div class="faq-item">
+    <div class="faq-question">
+      <span>В каких случаях нужны услуги нашей организации?</span>
+      <span class="faq-toggle">+</span>
+    </div>
+    <div class="faq-answer">
+      <p>Услуги нашей организации могут быть необходимы в различных случаях, например, когда вы уезжаете в командировку или в отпуск и нужен присмотр за вашим питомцем.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-question">
+      <span>Чем отличается няня от догситтега?</span>
+      <span class="faq-toggle">+</span>
+    </div>
+    <div class="faq-answer">
+      <p>Няня - это человек, который присматривает за вашим питомцем на дому, в то время как догситтер - это человек, который забирает вашего питомца к себе домой.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-question">
+      <span>Моя собака будет гулять на поводке?</span>
+      <span class="faq-toggle">+</span>
+    </div>
+    <div class="faq-answer">
+      <p>Да, ваша собака будет гулять на поводке, чтобы обеспечить ее безопасность.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-question">
+      <span>Справится ли няня или догситтер с моей собакой?</span>
+      <span class="faq-toggle">+</span>
+    </div>
+    <div class="faq-answer">
+      <p>Наши няни и догситтеры имеют опыт работы с различными породами собак и смогут справиться с вашим питомцем.</p>
+    </div>
+  </div>
+</div>
+<script>
+  const faqToggles = document.querySelectorAll('.faq-toggle');
+
+  faqToggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('active');
+      const faqAnswer = toggle.parentElement.nextElementSibling;
+      if (faqAnswer.style.display === 'none' || faqAnswer.style.display === '') {
+        faqAnswer.style.display = 'block';
+      } else {
+        faqAnswer.style.display = 'none';
+      }
+    });
+  });
+</script>
+
+    <!-- Подвал сайта -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.2028318455594!2d37.61962231588116!3d55.75399998055546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1670000000000!5m2!1sru!2sru" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="ffz">
+      <div class="logo_1"><img src="Icon/image.png" alt="Логотип"></div>
+      <p>brandnamesss@168gmail.com</p>
+      <p>+7 903 451 23 54</p>
+      <p>Ул.Кирова 12к5, Москва</p>
+      <div class="footer-icons-container">
+        <div class="footer-icon-group">
+          <img src="Icon/nu.png" alt="Telegram" class="footer-icon">
+          <span>@catsdogs5501/бот</span>
+        </div>
+        <div class="footer-icon-group">
+          <img src="Icon/wt.png" alt="WhatsApp" class="footer-icon">
+          <span>@catogs5901</span>
+        </div>
+        <div class="footer-icon-group">
+          <img src="Icon/insta.png" alt="Instagram" class="footer-icon">
+          <span>@catosik01</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

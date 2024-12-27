@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Booking_dog_cat.css">
+</head>
+<body>
+    <header>
+        <div class="burger" id="burger">
+          &#9776;
+          <!-- Символ бургер-меню -->
+        </div>
+        <a href="Prime.html" class="logo">
+          <img src="Icon/image.png" alt="Логотип">
+        </a>
+        <nav>
+          <ul>
+            <li><a href="hotel.html">Отель</a></li>
+            <li><a href="Grooming.html">Груминг</a></li>
+            <li class="has-dropdown">
+              <a href="#">Наши услуги</a>
+              <ul class="dropdown">
+                <li><a href="Babysitter_for_cats.html">Кэтситинг</a></li>
+                <li><a href="Dog_walking.html">Выгул собак</a></li>
+                <li><a href="Babysitter_for_dogs.html">Няня для собак</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="right-actions">
+            <a href="Order_Menu.html"><button class="order-btn">Заказать</button></a>
+            <a href="Personal_account.html" class="profile-icon">
+              <img src="Icon/image 148.png" alt="Kabinet">
+            </a>
+          </div>
+        </nav>
+      </header>
+      <script>
+        document.getElementById('burger').addEventListener('click', function() {
+          const nav = document.querySelector('nav');
+          nav.classList.toggle('active'); // Переключаем класс для показа/скрытия меню
+        });
+      </script>
+
+       <!-- 1 блок -->
+       <div class="container">
+        <div class="steps">
+            <div class="step active" data-step="1">1. Данные</div>
+            <div class="step" data-step="4">2. Оплата</div>
+            <div class="line"></div>
+        </div>
+        
+        <div class="content">
+            <!-- 2 -->
+            <div class="block active" id="data-block">
+
+                <div class="form-container">
+                    <h2 class="form-title">Введите ваши данные</h2>
+                    <form class="data-form">
+                        <label class="label-fio" for="fio">ФИО</label>
+                        <input class="input-fio" type="text" id="fio" name="fio" required>
+            
+                        <label class="label-phone" for="phone">Телефон</label>
+                        <input class="input-phone" type="tel" id="phone" name="phone" pattern="[0-9]*" required>
+            
+                        <label class="label-email" for="email">E-mail</label>
+                        <input class="input-email" type="email" id="email" name="email" required>
+            
+                        <h2 class="pet-title">Введите данные вашего питомца 
+                            <button type="button" class="add-pet-button">+</button></h2>
+                        <div class="pet-info-container">
+                            <div class="pet-info" id="pet-info-1">
+                                <label class="label-pet-type" for="pet-type-1">Питомец №1</label>
+                                <input class="input-pet-dog" type="radio" id="dog-1" name="pet-type-1" value="Собака">
+                                <label class="label-dog" for="dog-1">Собака</label>
+                                <input class="input-pet-cat" type="radio" id="cat-1" name="pet-type-1" value="Кошка" checked>
+                                <label class="label-cat" for="cat-1">Кошка</label>
+            
+                                <label class="label-nickname" for="nickname-1">Кличка</label>
+                                <input class="input-nickname" type="text" id="nickname-1" name="nickname-1" required>
+            
+                                <label class="label-birthdate" for="birthdate-1">Дата рождения</label>
+                                <input class="input-birthdate" type="date" id="birthdate-1" name="birthdate-1" required>
+            
+                                <label class="label-age" for="age-1">Возраст</label>
+                                <input class="input-age" type="number" id="age-1" name="age-1" required>
+            
+                                <label class="label-breed" for="breed-1">Порода</label>
+                                <input class="input-breed" type="text" id="breed-1" name="breed-1" required>
+            
+                                <label class="label-gender">Пол:</label>
+                                <input class="input-gender-male" type="radio" id="male-1" name="gender-1" value="Мальчик">
+                                <label class="label-male" for="male-1">Мальчик</label>
+                                <input class="input-gender-female" type="radio" id="female-1" name="gender-1" value="Девочка">
+                                <label class="label-female" for="female-1">Девочка</label>
+            
+                                <label class="label-vet-passport">Вет паспорт с отметкой о вакцинации</label>
+                                <input class="input-vet-passport" type="checkbox" id="vet-passport-1" name="vet-passport-1">
+            
+                                <label class="label-sterilization">Стерилизация/кастрация</label>
+                                <input class="input-sterilization" type="checkbox" id="sterilization-1" name="sterilization-1">
+            
+                                <label class="label-comment" for="comment-1">Комментарии:</label>
+                                <textarea class="textarea-comment" id="comment-1" name="comment-1" placeholder="Ваши комментарии..."></textarea>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            
+                <script>
+                    let petCount = 1;
+
+document.querySelector('.add-pet-button').addEventListener('click', function() {
+    petCount++;
+    
+    const petInfoContainer = document.querySelector('.pet-info-container');
+    
+    const newPetInfo = document.createElement('div');
+    newPetInfo.classList.add('pet-info');
+    newPetInfo.id = `pet-info-${petCount}`;
+    newPetInfo.innerHTML = `
+        <label class="label-pet-type" for="pet-type-${petCount}">Питомец №${petCount}</label>
+        <input class="input-pet-dog" type="radio" id="dog-${petCount}" name="pet-type-${petCount}" value="Собака">
+        <label class="label-dog" for="dog-${petCount}">Собака</label>
+        <input class="input-pet-cat" type="radio" id="cat-${petCount}" name="pet-type-${petCount}" value="Кошка" checked>
+        <label class="label-cat" for="cat-${petCount}">Кошка</label>
+
+        <label class="label-nickname" for="nickname-${petCount}">Кличка</label>
+        <input class="input-nickname" type="text" id="nickname-${petCount}" name="nickname-${petCount}" required>
+
+        <label class="label-birthdate" for="birthdate-${petCount}">Дата рождения</label>
+        <input class="input-birthdate" type="date" id="birthdate-${petCount}" name="birthdate-${petCount}" required>
+
+        <label class="label-age" for="age-${petCount}">Возраст</label>
+        <input class="input-age" type="number" id="age-${petCount}" name="age-${petCount}" required>
+
+        <label class="label-breed" for="breed-${petCount}">Порода</label>
+        <input class="input-breed" type="text" id="breed-${petCount}" name="breed-${petCount}" required>
+
+        <label class="label-gender">Пол:</label>
+        <input class="input-gender-male" type="radio" id="male-${petCount}" name="gender-${petCount}" value="Мальчик">
+        <label class="label-male" for="male-${petCount}">Мальчик</label>
+        <input class="input-gender-female" type="radio" id="female-${petCount}" name="gender-${petCount}" value="Девочка">
+        <label class="label-female" for="female-${petCount}">Девочка</label>
+
+        <label class="label-vet-passport">Вет паспорт с отметкой о вакцинации</label>
+        <input class="input-vet-passport" type="checkbox" id="vet-passport-${petCount}" name="vet-passport-${petCount}">
+
+        <label class="label-sterilization">Стерилизация/кастрация</label>
+        <input class="input-sterilization" type="checkbox" id="sterilization-${petCount}" name="sterilization-${petCount}">
+
+        <label class="label-comment" for="comment-${petCount}">Комментарии:</label>
+        <textarea class="textarea-comment" id="comment-${petCount}" name="comment-${petCount}" placeholder="Ваши комментарии..."></textarea>
+    `;
+    
+    petInfoContainer.appendChild(newPetInfo);
+});
+                </script>
+            </div>
+             <!-- 4 -->
+             <div class="block" id="payment-block">
+                <div class="payment-methods-container">
+                    <h2 class="payment-title">Способы оплаты</h2>
+                    
+                    <div class="payment-option">
+                        <input type="radio" id="payment-card-online" name="payment-method" class="payment-radio" value="card-online">
+                        <label for="payment-card-online" class="payment-label">
+                            Картой онлайн
+                            <span class="payment-icons">
+                                <img src="Icon/visa.png" alt="Visa" class="payment-icon">
+                            </span>
+                        </label>
+                    </div>
+            
+                    <div class="payment-option">
+                        <input type="radio" id="payment-fast-system" name="payment-method" class="payment-radio" value="fast-system">
+                        <label for="payment-fast-system" class="payment-label">
+                            Система быстрых платежей
+                            <span class="payment-icons">
+                                <img src="Icon/sbp.png" alt="Система быстрых платежей" class="payment-icon">
+                            </span>
+                        </label>
+                    </div>
+            
+                    <div class="privacy-policy-container">
+                        <input type="checkbox" id="privacy-policy" class="privacy-checkbox">
+                        <label for="privacy-policy" class="privacy-label">Я ознакомлен и принимаю Политику Конфиденциальности</label>
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="buttonss">
+            <button class="prev-button">Назад</button>
+            <button class="next-button">Далее</button>
+        </div>
+
+<script>
+    const steps = document.querySelectorAll('.step');
+const line = document.querySelector('.line');
+const nextButton = document.querySelector('.next-button');
+const prevButton = document.querySelector('.prev-button');
+const dataBlock = document.getElementById('data-block');
+const paymentBlock = document.getElementById('payment-block');
+
+function updateLinePosition() {
+    const activeStep = document.querySelector('.step.active');
+    const { left, width } = activeStep.getBoundingClientRect();
+    const containerOffset = document.querySelector('.steps').getBoundingClientRect().left;
+
+    line.style.transform = `translateX(${left - containerOffset}px)`;
+    line.style.width = `${width}px`;
+}
+
+nextButton.addEventListener('click', function() {
+    if (dataBlock.classList.contains('active')) {
+        dataBlock.classList.remove('active');
+        paymentBlock.classList.add('active');
+        steps[0].classList.remove('active');
+        steps[1].classList.add('active');
+    }
+    updateLinePosition();
+});
+
+prevButton.addEventListener('click', function() {
+    if (paymentBlock.classList.contains('active')) {
+        paymentBlock.classList.remove('active');
+        dataBlock.classList.add('active');
+        steps[1].classList.remove('active');
+        steps[0].classList.add('active');
+    }
+    updateLinePosition();
+});
+
+// Изначально устанавливаем позицию линии
+updateLinePosition();
+</script></div>
+</body>
+
+   <!-- Подвал сайта -->
+
+    <div class="foooter">
+        <footer>
+            <div class="footer-content">
+              <div class="footer-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.2028318455594!2d37.61962231588116!3d55.75399998055546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1670000000000!5m2!1sru!2sru" width="450" height="250" style="border:0;"    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+          
+              <div class="ffz">
+                <div class="logo_1"><img src="Icon/image.png" alt=""></div>
+              <p >brandnamesss@168gmail.com</p>
+              <p>+ 7 903 451 23 54</p>
+              <p>Ул.Кирова 12к5, Москва</p>
+              <div class="footer-icons-container">
+                <div class="footer-icon-group">
+                  <img src="Icon/nu.png" alt="Telegram" class="footer-icon">
+                  <span>@catsdogs5501/бот</span>
+                </div>
+                <div class="footer-icon-group">
+                  <img src="Icon/wt.png" alt="WhatsApp" class="footer-icon">
+                  <span>@catogs5901</span>
+                </div>
+                <div class="footer-icon-group">
+                  <img src="Icon/insta.png" alt="Instagram" class="footer-icon">
+                  <span>@catosik01</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          </footer>
+</html>

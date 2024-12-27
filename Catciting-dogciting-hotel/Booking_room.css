@@ -1,0 +1,1027 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 1140px;
+  }
+  
+  .top-block {
+    width: 100%;
+    height: 200px;
+    background-color: transparent;
+    margin-bottom: 20px;
+  }
+  
+  /* Стили для шапки */
+  header {
+    background-color: #084887;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .burger {
+    display: none; /* Скрываем бургер-меню по умолчанию */
+  }
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    position: relative;
+    margin-right: 10px;
+  }
+  
+  nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .has-dropdown:hover .dropdown {
+    display: block;
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #084887;
+    min-width: 160px;
+    z-index: 1;
+    padding: 10px 0;
+    margin-top: 15px;
+    border-radius: 10px;
+  }
+  
+  .dropdown li {
+    margin: 0;
+  }
+  
+  .dropdown li a {
+    display: block;
+    padding: 10px 20px;
+  }
+  
+  .order-btn {
+    background-color: #F58A07;
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    cursor: pointer;
+    border-radius: 13px;
+    margin: 10px;
+  }
+  
+  .profile-icon {
+    color: #fff;
+    font-size: 24px;
+    margin-left: 20px;
+  }
+  
+  .right-actions {
+    display: flex;
+    align-items: center;
+  }
+
+  /* 1 блок */
+  .steps {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.step {
+  
+    text-align: center;
+    padding: 10px 30px 10px 30px;
+    cursor: pointer;
+    position: relative;
+    top: 21px;
+    right: 10px;
+    border: 2px solid black; /* Черные границы */
+    border-radius: 5px 5px 0 0; /* Закругленные углы (опционально) */
+    margin: 0 10px; /* Отступы между шагами */
+    background-color: white; /* Фоновый цвет */
+    transition: background-color 0.3s; /* Плавный переход фона */
+}
+
+.step:hover {
+    background-color: #f0f0f0; /* Изменение фона при наведении */
+}
+
+.line {
+    position: absolute;
+    height: 4px;
+    background-color: purple;
+    width: 25%; /* Начальная ширина линии */
+    bottom: 30px;
+    left: 0px; /* Начальная позиция */
+    transition: left 0.3s ease, width 0.3s ease;
+    border-radius: 2px;
+}
+
+.step.active {
+    font-weight: bold;
+    color: purple;
+    background-color: #e0e0ff; /* Изменение фона активного шага */
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.block {
+    display: none;
+    border: 2px solid black; /* Черная граница */
+    border-radius: 16px; /* Скругленные углы */
+    padding: 20px;
+    background-color: white; /* Белый фон */
+   
+}
+
+input[type="date"] {
+    width: 30%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.block.active {
+    display: block;
+}
+
+.buttonss {
+    justify-content: space-between;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.prev-button {
+    padding: 10px 150px;
+    background-color: #FFC47D;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+.next-button {
+    position: relative;
+margin-left: 10px;
+    padding: 10px 150px;
+    background-color: #F58A07;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    transition: background-color 0.3s;
+}
+
+.prev-button:hover,
+.next-button:hover {
+    background-color: #f56607;
+}
+
+ h2 {
+margin-left: 10px;
+ }
+
+ #dataset {
+    margin-left: 10px;
+     }
+
+     #charset {
+margin-left: 10px;
+
+     }
+
+ /* Блок 1.2 */
+  .room-cards-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .room-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .room-card {
+    width: 32%;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .room-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .room-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f5f5f5;
+  }
+  
+  .room-info h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #B6C1E4;
+  }
+  
+  .room-features {
+    padding: 10px;
+  }
+  
+  .room-features p {
+    margin-bottom: 5px;
+  }
+  
+  .room-features ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .room-features li {
+    margin-bottom: 5px;
+  }
+  
+  .book-button-container {
+    position: relative;
+  }
+  
+  .book-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #F58A07;
+    color: #fff;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+  }
+
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+  .counter {
+    position: absolute;
+    bottom: 20px;
+    left: 320px;
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border-radius: 50%;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: counter-animation 1s ease-in-out;
+  }
+  
+  @keyframes counter-animation {
+    0% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes counter-animation {
+    0% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
+  /* БЛОК 2 */
+  .form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 1000px;
+}
+
+.form-title,
+.pet-title {
+    margin-bottom: 10px;
+}
+.input-birthdate{
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    right: 10px;
+}
+.label-fio,
+.label-phone,
+.label-email,
+.label-pet-type,
+.label-nickname,
+.label-age,
+.label-birthdate,
+.label-breed,
+.label-gender,
+.label-vet-passport,
+.label-sterilization,
+.label-comment {
+    display: block;
+    margin-top: 10px;
+}
+
+.input-fio,
+.input-phone,
+.input-email,
+.input-age,
+.input-nickname,
+.input-breed,
+.textarea-comment {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-phone {
+    -moz-appearance: textfield; /* Убираем стрелки у числа */
+}
+
+.input-phone::-webkit-outer-spin-button,
+.input-phone::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.add-pet-button {
+    position: relative;
+    bottom: 3px;
+    background-color: #B6C1E4;
+    border: 0.5px solid black; /* Черная граница */
+    border-radius: 0.5px;
+}
+
+
+/* УСЛУГИ */
+.service-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .service-card {
+    margin-top: 10px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 1000px;
+    z-index: 2;
+  }
+  .service-card_1 {
+    margin-top: 30px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 1000px;
+    z-index: 2;
+  }
+  
+  .service-image img {
+    margin: 10px 10px 10px 10px;
+    border-radius: 16px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .service-info {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .service-options {
+    position: relative;
+  }
+  
+  .options-btn {
+    background-color: #ff6b00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .options-menu {
+    position: absolute;
+    left: 0px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1;
+    display: none;
+    min-width: 50px;
+    margin-top: 10px; /* Добавлено, чтобы окно было под кнопкой */
+  }
+  
+  .option-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .counter {
+    display: flex;
+    align-items: center;
+  }
+  
+  .counter-btn {
+    background-color: #ff6b00;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .counter-value {
+    margin: 0 10px;
+    font-weight: bold;
+  }
+
+
+  /* ОПЛАТА */
+  .payment-methods-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 1000px;
+}
+
+.payment-title {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.payment-option {
+    margin-bottom: 15px;
+}
+
+.payment-radio {
+    display: none; /* Скрываем стандартные радиокнопки */
+}
+
+.payment-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.payment-label:hover {
+    background-color: #f0f0f0;
+}
+
+.payment-radio:checked + .payment-label {
+    background-color: #e0e0e0;
+    border-color: #666;
+}
+
+.payment-icons {
+    margin-left: auto;
+}
+
+.payment-icon {
+    width: 50px;
+    height: auto;
+    margin-left: 5px;
+}
+
+.privacy-policy-container {
+    margin-top: 20px;
+}
+
+.privacy-checkbox {
+    margin-right: 10px;
+}
+
+.privacy-label {
+    cursor: pointer;
+}
+
+/* 
+  Подвал сайта */
+  .foooter {
+    width: 1256.5px;
+     
+  }
+  footer {
+    position: relative;
+    left: 0px;
+    top: 40px;
+    background-color: #333;
+    color: #202020;
+    padding: 20px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+ 
+
+  }
+
+  .ffz {
+    position: relative;
+    align-items: start;
+    display: block;
+    color: white;
+    font-size: 20px;
+    right: 400px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-map {
+    position: relative;
+    left: 690px;
+    padding: 20px 10px 10px 10px;
+  }
+  
+  .footer-icons-container {
+    display: block;
+    position: relative;
+  }
+  
+  .footer-icon-group {
+    display: block;
+    align-items: start;
+    margin: 0 10px;
+    position: relative;
+    right: 10px;
+  }
+  
+  .footer-icon {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    bottom: -5px;
+  
+  }
+  
+  .footer-contact {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-contact .footer-icon {
+    margin-right: 5px;
+  }
+
+  @media (max-width: 430px) {
+    .burger {
+      display: block; /* Показываем бургер-меню на мобильных */
+      font-size: 28px;
+      cursor: pointer;
+    }
+  
+    nav {
+      display: none; /* Скрываем меню навигации по умолчанию */
+      flex-direction: column; /* Меню будет вертикальным */
+      width: 100%; /* Ширина меню на весь экран */
+      background-color: #084887; /* Цвет фона для мобильного меню */
+      position: absolute; /* Позиционируем меню */
+      top: 80px; /* Расположение под шапкой */
+      left: 0;
+      z-index: 10; /* Убедимся, что меню поверх остальных элементов */
+      border-radius: 16px;
+      line-height:30px;
+      padding: 10px;
+      align-items: start;
+    }
+  
+    nav.active {
+      display: flex; /* Показываем меню при активации */
+    }
+  
+    nav ul {
+      flex-direction: column; /* Вертикальное расположение элементов меню */
+      width: 50%; /* Ширина списка на весь экран */
+      margin-bottom: 10px;
+      right: 70px;
+  
+    }
+    .dropdown {
+      line-height:19px;
+    }
+  
+    nav li {
+      margin: 0; /* Убираем отступы между пунктами меню */
+    }
+  
+    .right-actions {
+      flex-direction: column; /* Вертикальное расположение кнопок */
+      align-items: flex-start; /* Выравнивание по левому краю */
+    }
+  
+    .order-btn { 
+      margin: 5px 0; /* Отступы между кнопками */
+      
+    }
+    .profile-icon {
+position: relative;
+     right: 20px;
+     top: 5px;
+    } 
+/* 1 блок */
+.content {
+    width: 400px;
+  }
+  .steps {
+    flex-direction: row; /* Изменяем направление на вертикальное */
+    align-items: flex-start; /* Выравниваем элементы по левому краю */
+    width: 350px;
+  }
+
+  .step {
+    
+    padding: 10px 0; /* Уменьшаем отступы */
+    margin: 3px 0; /* Убираем горизонтальные отступы и уменьшаем вертикальные */
+    width: 100px; /* Устанавливаем ширину на 100% для кнопок */
+    text-align: center; /* Центрируем текст */
+    position: relative;
+    top: 15px;
+    left: 0px;
+    font-size: 10px;
+    margin-right: 0px;
+    margin-top: 5px;
+  }
+
+  .line {
+    width: 80px; /* Устанавливаем ширину линии на 100% */
+    bottom: 30px; /* Сдвигаем линию вниз */
+  }
+
+  .content {
+    margin-top: 10px; /* Уменьшаем отступ сверху */
+  }
+
+  .block {
+    padding: 15px; /* Уменьшаем внутренние отступы блока */
+  }
+
+  .form-container {
+    padding: 0px; /* Уменьшаем внутренние отступы контейнера формы */
+    width: 340px; /* Устанавливаем ширину на 100% */
+    position: relative;
+    left: 0px;
+  }
+ /* 2 */
+ h2 {
+  font-size: 18px; /* Уменьшаем размер шрифта заголовка */
+  margin-left: 5px; /* Уменьшаем отступ слева */
+}
+
+#dataset {
+  margin-left: 5px; /* Уменьшаем отступ слева для контейнера дат */
+  padding: 10px; /* Добавляем внутренние отступы для лучшего восприятия */
+  width: 100%; /* Устанавливаем ширину на 100% */
+}
+
+#date-input {
+  width: 80%; /* Устанавливаем ширину поля ввода даты на 100% */
+  padding: 10px; /* Добавляем внутренние отступы для удобства */
+  margin-top: 10px; /* Добавляем отступ сверху для отделения от заголовка */
+  border-radius: 5px; /* Закругляем углы поля ввода */
+  border: 1px solid #ccc; /* Добавляем рамку */
+}
+/* 2 блок */
+.room-cards-container {
+  padding: 5px; /* Уменьшаем отступы вокруг контейнера */
+  
+}
+#charset {
+  font-size: 16px;
+  margin-left: 20px;
+}
+.room-cards-container h2{
+  text-align: start;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-left: 15px;
+  
+}
+
+.room-cards {
+  flex-direction: column; /* Изменяем направление на вертикальное */
+  align-items: center; /* Центрируем карточки */
+}
+
+.room-card {
+  width: 90%; /* Задаем ширину 100% для карточек */
+  margin-bottom: 50px; /* Добавляем отступ между карточками */
+}
+
+.room-image img {
+  height: 150px; /* Уменьшаем высоту изображений */
+}
+
+.room-info {
+  flex-direction: column; /* Вертикальное расположение информации */
+  align-items: center; /* Центрируем текст */
+  padding: 10px; /* Увеличиваем отступы для лучшего восприятия */
+}
+
+.room-info h3 {
+  font-size: 16px; /* Уменьшаем размер заголовка */
+}
+
+.price {
+  font-size: 14px; /* Уменьшаем размер шрифта для цены */
+}
+
+.room-features {
+  padding: 10px; /* Увеличиваем отступы для удобства чтения */
+}
+
+.room-features p {
+  font-size: 12px; /* Уменьшаем размер текста для описания */
+}
+
+.room-features li {
+  font-size: 12px; /* Уменьшаем размер шрифта для списка */
+}
+
+.book-button {
+  padding: 8px; /* Уменьшаем отступы кнопки */
+  font-size: 14px; /* Уменьшаем размер шрифта кнопки */
+}
+
+.counter {
+  top: -15px; /* Изменяем позицию счетчика */
+  left: 300px; /* Корректируем позицию счетчика */
+  width: 25px; /* Увеличиваем ширину счетчика */
+  height: 25px; /* Увеличиваем высоту счетчика */
+  font-size: 14px; /* Увеличиваем размер шрифта счетчика */
+}
+.buttonss {
+  display: flex;
+  padding: 10px 10px; /* Уменьшаем отступы кнопок */
+  max-width: 20px; /* Устанавливаем ширину кнопок на 100% */
+  margin: 5px 0; /* Убираем горизонтальные отступы и добавляем вертикальные */
+  position: relative;
+  bottom: 35px;
+  margin-top: 50px;
+  left: 20px;
+}
+.prev-button, .next-button {
+
+  padding: 10px 55px; /* Уменьшаем отступы кнопок */
+  width: 150px; /* Устанавливаем ширину кнопок на 100% */
+  margin: 5px 10px; /* Убираем горизонтальные отступы и добавляем вертикальные */
+  position: relative;
+  bottom: 35px;
+  margin-top: 50px;
+}
+
+ /* Подвал сайта  */
+ .foooter {
+  width: 100%;
+ }
+ footer {
+  background-color: #333;
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Изменяем на вертикальное расположение для мобильных */
+  align-items: center; /* Центрируем элементы */
+  width: 100%;
+  margin-top: -100px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column; /* Вертикальное расположение для мобильных */
+  align-items: center; /* Центрируем элементы */
+}
+
+.footer-map {
+  max-width: 100%;
+  left: -20px;; /* Устанавливаем ширину карты на 100% */
+
+}
+
+.ffz {
+  text-align: center; /* Центрируем текст */
+  font-size: 16px; /* Уменьшаем размер шрифта для мобильных */
+  left:-20px;
+  display: block;
+}
+
+.footer-icons-container {
+  display: flex; /* Используем flexbox для иконок */
+  justify-content: center; /* Центрируем иконки */
+  flex-wrap: wrap; /* Позволяем переносить иконки на новую строку */
+  margin-top: 10px; /* Отступ сверху для иконок */
+  margin: 10px;
+}
+
+.footer-icon-group {
+  display: flex; /* Используем flexbox для группы иконок */
+  align-items: center; /* Центрируем иконки и текст по вертикали */
+  margin: 0 10px; /* Отступы между группами иконок */
+}
+
+.footer-icon {
+  width: 24px; /* Уменьшаем размер иконок */
+  height: 24px; /* Уменьшаем размер иконок */
+  margin-right: 5px; /* Отступ справа для иконки */
+  margin-bottom: 10px;
+}
+
+/* Оплата */
+.payment-methods-container {
+  padding: 15px; /* Уменьшаем внутренние отступы контейнера оплаты */
+  width: 340px; /* Устанавливаем ширину на 100% */
+}
+
+.payment-option {
+  margin-bottom: 10px; /* Уменьшаем отступы между вариантами оплаты */
+}
+
+.payment-label {
+  padding: 8px; /* Уменьшаем отступы для меток оплаты */
+}
+
+.payment-icon {
+  width: 40px; /* Уменьшаем размер иконок платежей */
+}
+.data-form {
+  width: 325px;
+}
+.payment-title {
+  font-size: 20px;
+}
+.payment-label {
+  font-size: 16px;
+}
+
+/* Данные */
+.form-container {
+  padding: 15px; /* Уменьшаем внутренние отступы контейнера формы */
+  width: 340px; /* Устанавливаем ширину на 100% */
+  position: relative;
+  left: 0px;
+}
+ /* Услуги  */
+ .service-container {
+  padding: 10px; /* Добавляем отступы вокруг контейнера */
+  position: relative;
+  top: 10px;
+}
+.service-container h2{
+text-align: center;
+font-size: 22px;
+}
+
+.service-card, .service-card_1 {
+  flex-direction: column; /* Изменяем направление на вертикальное */
+  align-items: center; /* Центрируем содержимое карточек */
+  width: 370px; /* Устанавливаем ширину на 100% */
+  margin: 0px 0; /* Убираем верхний отступ и добавляем нижний */
+}
+
+.service-image img {
+  width: 350px; /* Устанавливаем ширину изображения на 100% */
+  height: 220px; /* Автоматическая высота для сохранения пропорций */
+  margin: 0; /* Убираем отступы */
+}
+
+.service-info {
+  padding: 15px; /* Уменьшаем отступы внутри карточки */
+  text-align: center; /* Центрируем текст */
+}
+
+.service-options {
+  display: flex;
+  flex-direction: column; /* Вертикальное расположение опций */
+  align-items: center; /* Центрируем элементы */
+}
+
+.options-btn {
+  width: 100%; /* Устанавливаем ширину кнопки на 100% */
+  padding: 10px; /* Увеличиваем отступы кнопки */
+}
+
+.options-menu {
+  width: 100%; /* Устанавливаем ширину меню на 100% */
+  left: 0; /* Сбрасываем позиционирование */
+}
+
+.option-container {
+  flex-direction: column; /* Вертикальное расположение опций */
+  align-items: center; /* Центрируем элементы */
+  margin-bottom: 5px; /* Уменьшаем отступы между опциями */
+}
+
+.counter {
+  margin-top: 5px; /* Добавляем отступ сверху для счетчика */
+}
+
+.blurry-circle3, .blurry-circle4 {
+  width: 100px; /* Уменьшаем размер размытого круга */
+  height: 100px; /* Уменьшаем размер размытого круга */
+  position: absolute;
+  left: 200px;
+}
+}

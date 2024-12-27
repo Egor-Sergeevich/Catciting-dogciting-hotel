@@ -1,0 +1,657 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 1140px;
+  }
+  
+  .top-block {
+    width: 100%;
+    height: 200px;
+    background-color: transparent;
+    margin-bottom: 20px;
+  }
+  
+  /* Стили для шапки */
+  header {
+    background-color: #084887;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .burger {
+    display: none; /* Скрываем бургер-меню по умолчанию */
+  }
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    position: relative;
+    margin-right: 10px;
+  }
+  
+  nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .has-dropdown:hover .dropdown {
+    display: block;
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #084887;
+    min-width: 160px;
+    z-index: 1;
+    padding: 10px 0;
+    margin-top: 15px;
+    border-radius: 10px;
+  }
+  
+  .dropdown li {
+    margin: 0;
+  }
+  
+  .dropdown li a {
+    display: block;
+    padding: 10px 20px;
+  }
+  
+  .order-btn {
+    background-color: #F58A07;
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    cursor: pointer;
+    border-radius: 13px;
+    margin: 10px;
+  }
+  
+  .profile-icon {
+    color: #fff;
+    font-size: 24px;
+    margin-left: 20px;
+  }
+  
+  .right-actions {
+    display: flex;
+    align-items: center;
+  }
+
+  /* 1 блок */
+  .card-title h1{
+    font-size: 32px;
+    margin-top: 50px;
+  }
+  .card {
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 560px; 
+    border: 1px solid black;
+}
+
+
+.service {
+    display: flex;
+}
+
+.service p {
+    font-size: 18px;
+    margin: 0;
+    text-align: start;
+    position: relative;
+    top: 7px;
+}
+.custom-buttonn {
+    position: relative;
+    left: 235px;
+    display: inline-flex;
+    align-items: center;
+    background-color: #2b5aa0;
+    color: white;
+    text-decoration: none;
+    padding: 10px 40px 10px 40px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    border-radius: 10px 0px 0px 10px;
+    margin-right: 10px;
+  }
+  
+  .arrow-box {
+    position: absolute;
+    left: 155px;
+    display: inline-block;
+    width: 35px;
+    height: 36px;
+    background-color: #2b5aa0;
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  
+.custom-buttonn:hover {
+    background-color: #F58A07; 
+} 
+.arrow-box:hover {
+    background-color: #F58A07; 
+} 
+.blurry-circle0 {
+    position: absolute;
+    top: 215px;
+    right: 310px;
+    width: 600px;
+    height: 100px;
+    background-color: #B6C1E4;
+    border-radius: 16px;
+    filter: blur(15px);
+    z-index: -1;
+  }
+
+  /* 2 блок */
+  .card_2 {
+    margin-top: 40px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 560px; 
+    border: 1px solid black;
+}
+.blurry-circle2 {
+    position: absolute;
+    top: 350px;
+    right: 310px;
+    width: 600px;
+    height: 100px;
+    background-color: #B6C1E4;
+    border-radius: 16px;
+    filter: blur(15px);
+    z-index: -1;
+  }
+  .custom-buttonn_2 {
+    position: relative;
+    left: 265px;
+    display: inline-flex;
+    align-items: center;
+    background-color: #2b5aa0;
+    color: white;
+    text-decoration: none;
+    padding: 10px 40px 10px 40px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    border-radius: 10px 0px 0px 10px;
+    margin-right: 10px;
+  }
+  .custom-buttonn_2:hover {
+    background-color: #F58A07; 
+} 
+  /* 3 блок */
+  .card_3 {
+    margin-top: 40px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 560px; 
+    border: 1px solid black;
+}
+.blurry-circle3 {
+    position: absolute;
+    top: 485px;
+    right: 310px;
+    width: 600px;
+    height: 100px;
+    background-color: #B6C1E4;
+    border-radius: 16px;
+    filter: blur(15px);
+    z-index: -1;
+  }
+  .custom-buttonn_3 {
+    position: relative;
+    left: 230px;
+    display: inline-flex;
+    align-items: center;
+    background-color: #2b5aa0;
+    color: white;
+    text-decoration: none;
+    padding: 10px 40px 10px 40px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    border-radius: 10px 0px 0px 10px;
+    margin-right: 10px;
+  }
+  .custom-buttonn_3:hover {
+    background-color: #F58A07; 
+} 
+   /* 4 блок */
+   .card_4 {
+    margin-top: 40px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 560px; 
+    border: 1px solid black;
+}
+.blurry-circle4 {
+    position: absolute;
+    top: 625px;
+    right: 310px;
+    width: 600px;
+    height: 100px;
+    background-color: #B6C1E4;
+    border-radius: 16px;
+    filter: blur(15px);
+    z-index: -1;
+  }
+  .custom-buttonn_4 {
+    position: relative;
+    left: 315px;
+    display: inline-flex;
+    align-items: center;
+    background-color: #2b5aa0;
+    color: white;
+    text-decoration: none;
+    padding: 10px 40px 10px 40px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    border-radius: 10px 0px 0px 10px;
+    margin-right: 10px;
+  }
+  .custom-buttonn_4:hover {
+    background-color: #F58A07; 
+} 
+  /* 5 блок */
+  .card_5 {
+    margin-top: 40px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 560px; 
+    border: 1px solid black;
+}
+.blurry-circle5 {
+    position: absolute;
+    top: 760px;
+    right: 310px;
+    width: 600px;
+    height: 100px;
+    background-color: #B6C1E4;
+    border-radius: 16px;
+    filter: blur(15px);
+    z-index: -1;
+  }
+  .custom-buttonn_5 {
+    position: relative;
+    left: 300px;
+    display: inline-flex;
+    align-items: center;
+    background-color: #2b5aa0;
+    color: white;
+    text-decoration: none;
+    padding: 10px 40px 10px 40px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    border-radius: 10px 0px 0px 10px;
+    margin-right: 10px;
+  }
+  .custom-buttonn_5:hover {
+    background-color: #F58A07; 
+} 
+
+  .blurry-circle6 {
+    position: absolute;
+    top: 310px;
+    right: 1090px;
+    width: 150px;
+    height: 150px;
+    background-color: #B6C1E4;
+    border-radius: 50%;
+    filter: blur(15px);
+    z-index: -2;
+  }
+
+  .circle_0 {
+    position: absolute;
+    top: 400px;
+    right: 800px;
+    width: 400px;
+    height: 400px;
+    z-index: -1;
+  }
+  .blurry-circle7 {
+    position: absolute;
+    top: 410px;
+    right: 90px;
+    width: 150px;
+    height: 150px;
+    background-color: #B6C1E4;
+    border-radius: 50%;
+    filter: blur(15px);
+    z-index: -2;
+  }
+  .blurry-circle8 {
+    position: absolute;
+    top: 150px;
+    right: 50px;
+    width: 150px;
+    height: 150px;
+    background-color: #909CC2;
+    border-radius: 50%;
+    filter: blur(15px);
+    z-index: -2;
+  }
+  .blurry-circle9 {
+    position: absolute;
+    top: 700px;
+    right: 50px;
+    width: 150px;
+    height: 150px;
+    background-color: #909CC2;
+    border-radius: 50%;
+    filter: blur(15px);
+    z-index: -2;
+  }
+  .blurry-circle10 {
+    position: absolute;
+    top: 700px;
+    right: 1000px;
+    width: 150px;
+    height: 150px;
+    background-color: #B6C1E4;
+    border-radius: 50%;
+    filter: blur(15px);
+    z-index: -2;
+  }
+
+  /* 
+  Подвал сайта */
+  footer {
+    position: relative;
+    left: 0px;
+    top: 40px;
+    background-color: #333;
+    color: #202020;
+    padding: 20px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    width: 1216.5px;
+
+  }
+
+  .ffz {
+    position: relative;
+    align-items: start;
+    display: block;
+    color: white;
+    font-size: 20px;
+    right: 400px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-map {
+    position: relative;
+    left: 690px;
+    padding: 20px 10px 10px 10px;
+  }
+  
+  .footer-icons-container {
+    display: block;
+    position: relative;
+  }
+  
+  .footer-icon-group {
+    display: block;
+    align-items: start;
+    margin: 0 10px;
+    position: relative;
+    right: 10px;
+  }
+  
+  .footer-icon {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    bottom: -5px;
+  
+  }
+  
+  .footer-contact {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-contact .footer-icon {
+    margin-right: 5px;
+  }
+
+  @media (max-width: 430px) {
+    .burger {
+      display: block; /* Показываем бургер-меню на мобильных */
+      font-size: 28px;
+      cursor: pointer;
+    }
+  
+    nav {
+      display: none; /* Скрываем меню навигации по умолчанию */
+      flex-direction: column; /* Меню будет вертикальным */
+      width: 100%; /* Ширина меню на весь экран */
+      background-color: #084887; /* Цвет фона для мобильного меню */
+      position: absolute; /* Позиционируем меню */
+      top: 80px; /* Расположение под шапкой */
+      left: 0;
+      z-index: 10; /* Убедимся, что меню поверх остальных элементов */
+      border-radius: 16px;
+      line-height:30px;
+      padding: 10px;
+      align-items: start;
+    }
+  
+    nav.active {
+      display: flex; /* Показываем меню при активации */
+    }
+  
+    nav ul {
+      flex-direction: column; /* Вертикальное расположение элементов меню */
+      width: 50%; /* Ширина списка на весь экран */
+      margin-bottom: 10px;
+      right: 70px;
+  
+    }
+    .dropdown {
+      line-height:19px;
+    }
+  
+    nav li {
+      margin: 0; /* Убираем отступы между пунктами меню */
+    }
+
+    
+  
+    .right-actions {
+      flex-direction: column; /* Вертикальное расположение кнопок */
+      align-items: flex-start; /* Выравнивание по левому краю */
+    }
+  
+    .order-btn { 
+      margin: 5px 0; /* Отступы между кнопками */
+    }
+
+/* 1 блок */
+
+.card-title h1 {
+    font-size: 24px; /* Уменьшаем размер заголовка */
+    margin-top: 30px; /* Уменьшаем верхний отступ */
+    text-align: center; /* Центрируем заголовок */
+  }
+
+  .card, .card_2, .card_3, .card_4, .card_5 {
+    width: 80%; /* Увеличиваем ширину карточек */
+    margin: 10px auto; /* Центрируем карточки и добавляем отступы */
+    padding: 20px; /* Уменьшаем внутренние отступы */
+    margin-top: 20px;
+  }
+
+  .service {
+    display: flex; /* Используем флекс для выравнивания */
+    justify-content: space-between; /* Размещаем текст и кнопку по краям */
+    align-items: center; /* Выравниваем по центру по вертикали */
+  }
+
+  .service p {
+    font-size: 16px; /* Уменьшаем размер текста */
+    margin: 0; /* Убираем отступы */
+    text-align: left; /* Выравниваем текст по левому краю */
+    position: relative;
+    margin-bottom: 15px;
+  }
+
+  .custom-buttonn, .custom-buttonn_2, .custom-buttonn_3, .custom-buttonn_4, .custom-buttonn_5 {
+    padding: 10px 20px; /* Уменьшаем внутренние отступы кнопок */
+    font-size: 14px; /* Уменьшаем размер шрифта кнопок */
+    margin-left: 10px; /* Добавляем небольшой отступ слева от кнопки */
+    position: relative;
+    left: -40px;
+    z-index: 5;
+  }
+
+  .arrow-box {
+    left: 110px; /* Уменьшаем смещение стрелки */
+  }
+
+  .blurry-circle0, .blurry-circle2, .blurry-circle3, .blurry-circle4, .blurry-circle5 {
+    width: 350px; /* Увеличиваем ширину размытого круга */
+    height: 80px; /* Уменьшаем высоту размытого круга */
+    right: 0; /* Убираем смещение вправо */
+    border-radius: 16px;
+
+  }
+  .blurry-circle0 {
+    position: absolute;
+    top: 180px;
+    left: 80px;
+  }
+  .blurry-circle2 {
+    position: absolute;
+    top: 290px;
+    left: 80px;
+  }
+  .blurry-circle3 {
+    position: absolute;
+    top: 400px;
+    left: 80px;
+  }
+  .blurry-circle4 {
+    position: absolute;
+    top: 500px;
+    left: 80px;
+  }
+  .blurry-circle5 {
+    position: absolute;
+    top: 610px;
+    left: 80px;
+  }
+  .blurry-circle6,.blurry-circle7, .blurry-circle8, .blurry-circle9, .blurry-circle10 {
+width: 10px;
+height: 10px;
+  }
+  /* Подвал сайта */
+footer {
+  background-color: #333;
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Изменяем на вертикальное расположение для мобильных */
+  align-items: center; /* Центрируем элементы */
+  width: 100%;
+  position: relative;
+  top: 40px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column; /* Вертикальное расположение для мобильных */
+  align-items: center; /* Центрируем элементы */
+}
+
+.footer-map {
+  max-width: 100%;
+  left: -15px;; /* Устанавливаем ширину карты на 100% */
+
+}
+
+.ffz {
+  text-align: center; /* Центрируем текст */
+  font-size: 16px; /* Уменьшаем размер шрифта для мобильных */
+  left:-15px;
+  max-width: 350px;
+}
+
+.footer-icons-container {
+  display: flex; /* Используем flexbox для иконок */
+  justify-content: center; /* Центрируем иконки */
+  flex-wrap: wrap; /* Позволяем переносить иконки на новую строку */
+  margin-top: 10px; /* Отступ сверху для иконок */
+}
+
+.footer-icon-group {
+  display: flex; /* Используем flexbox для группы иконок */
+  align-items: center; /* Центрируем иконки и текст по вертикали */
+  margin: 0 10px; /* Отступы между группами иконок */
+}
+
+.footer-icon {
+  width: 24px; /* Уменьшаем размер иконок */
+  height: 24px; /* Уменьшаем размер иконок */
+  margin-right: 5px; /* Отступ справа для иконки */
+  margin-bottom: 10px;
+}
+  }

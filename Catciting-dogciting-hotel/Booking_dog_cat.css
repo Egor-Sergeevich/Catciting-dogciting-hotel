@@ -1,0 +1,613 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 1140px;
+  }
+  
+  .top-block {
+    width: 100%;
+    height: 200px;
+    background-color: transparent;
+    margin-bottom: 20px;
+  }
+  
+  /* Стили для шапки */
+  header {
+    background-color: #084887;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .burger {
+    display: none; /* Скрываем бургер-меню по умолчанию */
+  }
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    position: relative;
+    margin-right: 10px;
+  }
+  
+  nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .has-dropdown:hover .dropdown {
+    display: block;
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #084887;
+    min-width: 160px;
+    z-index: 1;
+    padding: 10px 0;
+    margin-top: 15px;
+    border-radius: 10px;
+  }
+  
+  .dropdown li {
+    margin: 0;
+  }
+  
+  .dropdown li a {
+    display: block;
+    padding: 10px 20px;
+  }
+  
+  .order-btn {
+    background-color: #F58A07;
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    cursor: pointer;
+    border-radius: 13px;
+    margin: 10px;
+  }
+  
+  .profile-icon {
+    color: #fff;
+    font-size: 24px;
+    margin-left: 20px;
+  }
+  
+  .right-actions {
+    display: flex;
+    align-items: center;
+  }
+  /* 1 */
+  .steps {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.step {
+  
+    text-align: center;
+    padding: 10px 30px 10px 30px;
+    cursor: pointer;
+    position: relative;
+    top: 21px;
+    right: 10px;
+    border: 2px solid black; /* Черные границы */
+    border-radius: 5px 5px 0 0; /* Закругленные углы (опционально) */
+    margin: 0 10px; /* Отступы между шагами */
+    background-color: white; /* Фоновый цвет */
+    transition: background-color 0.3s; /* Плавный переход фона */
+}
+
+.step:hover {
+    background-color: #f0f0f0; /* Изменение фона при наведении */
+}
+
+.line {
+    position: absolute;
+    height: 4px;
+    background-color: purple;
+    width: 25%; /* Начальная ширина линии */
+    bottom: 30px;
+    left: 0px; /* Начальная позиция */
+    transition: left 0.3s ease, width 0.3s ease;
+    border-radius: 2px;
+}
+
+.step.active {
+    font-weight: bold;
+    color: purple;
+    background-color: #e0e0ff; /* Изменение фона активного шага */
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.block {
+    display: none;
+    border: 2px solid black; /* Черная граница */
+    border-radius: 16px; /* Скругленные углы */
+    padding: 20px;
+    background-color: white; /* Белый фон */
+   
+}
+
+input[type="date"] {
+    width: 30%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.block.active {
+    display: block;
+}
+
+.buttonss {
+    justify-content: space-between;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.prev-button {
+    padding: 10px 150px;
+    background-color: #FFC47D;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+.next-button {
+    position: relative;
+margin-left: 10px;
+    padding: 10px 150px;
+    background-color: #F58A07;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    transition: background-color 0.3s;
+}
+
+.prev-button:hover,
+.next-button:hover {
+    background-color: #f56607;
+}
+/* БЛОК 2 */
+.content {
+  width: 1000px;
+  overflow: hidden;
+}
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 915px;
+}
+
+.form-title,
+.pet-title {
+    margin-bottom: 10px;
+}
+.input-birthdate{
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    right: 10px;
+}
+.label-fio,
+.label-phone,
+.label-email,
+.label-pet-type,
+.label-nickname,
+.label-age,
+.label-birthdate,
+.label-breed,
+.label-gender,
+.label-vet-passport,
+.label-sterilization,
+.label-comment {
+    display: block;
+    margin-top: 10px;
+}
+
+.input-fio,
+.input-phone,
+.input-email,
+.input-age,
+.input-nickname,
+.input-breed,
+.textarea-comment {
+    width: 98%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-phone {
+    -moz-appearance: textfield; /* Убираем стрелки у числа */
+}
+
+.input-phone::-webkit-outer-spin-button,
+.input-phone::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.add-pet-button {
+    position: relative;
+    bottom: 3px;
+    background-color: #B6C1E4;
+    border: 0.5px solid black; /* Черная граница */
+    border-radius: 0.5px;
+}
+
+/* ОПЛАТА */
+.payment-methods-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 920px;
+}
+
+.payment-title {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.payment-option {
+    margin-bottom: 15px;
+}
+
+.payment-radio {
+    display: none; /* Скрываем стандартные радиокнопки */
+}
+
+.payment-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.payment-label:hover {
+    background-color: #f0f0f0;
+}
+
+.payment-radio:checked + .payment-label {
+    background-color: #e0e0e0;
+    border-color: #666;
+}
+
+.payment-icons {
+    margin-left: auto;
+}
+
+.payment-icon {
+    width: 50px;
+    height: auto;
+    margin-left: 5px;
+}
+
+.privacy-policy-container {
+    margin-top: 20px;
+}
+
+.privacy-checkbox {
+    margin-right: 10px;
+}
+
+.privacy-label {
+    cursor: pointer;
+}
+
+/* 
+  Подвал сайта */
+  /* 
+  Подвал сайта */
+  .foooter {
+    position: relative;
+    width: 1256.5px;
+     
+  }
+  footer {
+    position: relative;
+    left: 0px;
+    top: 40px;
+    background-color: #333;
+    color: #202020;
+    padding: 20px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+ 
+
+  }
+
+  .ffz {
+    position: relative;
+    align-items: start;
+    display: block;
+    color: white;
+    font-size: 20px;
+    right: 400px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-map {
+    position: relative;
+    left: 690px;
+    padding: 20px 10px 10px 10px;
+  }
+  
+  .footer-icons-container {
+    display: block;
+    position: relative;
+  }
+  
+  .footer-icon-group {
+    display: block;
+    align-items: start;
+    margin: 0 10px;
+    position: relative;
+    right: 10px;
+  }
+  
+  .footer-icon {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    bottom: -5px;
+  
+  }
+  
+  .footer-contact {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-contact .footer-icon {
+    margin-right: 5px;
+  }
+  @media (max-width: 430px) {
+    .burger {
+      display: block; /* Показываем бургер-меню на мобильных */
+      font-size: 28px;
+      cursor: pointer;
+    }
+  
+    nav {
+      display: none; /* Скрываем меню навигации по умолчанию */
+      flex-direction: column; /* Меню будет вертикальным */
+      width: 100%; /* Ширина меню на весь экран */
+      background-color: #084887; /* Цвет фона для мобильного меню */
+      position: absolute; /* Позиционируем меню */
+      top: 80px; /* Расположение под шапкой */
+      left: 0;
+      z-index: 10; /* Убедимся, что меню поверх остальных элементов */
+      border-radius: 16px;
+      line-height:30px;
+      padding: 10px;
+      align-items: start;
+    }
+  
+    nav.active {
+      display: flex; /* Показываем меню при активации */
+    }
+  
+    nav ul {
+      flex-direction: column; /* Вертикальное расположение элементов меню */
+      width: 50%; /* Ширина списка на весь экран */
+      margin-bottom: 10px;
+      right: 70px;
+  
+    }
+    .dropdown {
+      line-height:19px;
+    }
+  
+    nav li {
+      margin: 0; /* Убираем отступы между пунктами меню */
+    }
+  
+    .right-actions {
+      flex-direction: column; /* Вертикальное расположение кнопок */
+      align-items: flex-start; /* Выравнивание по левому краю */
+    }
+  
+    .order-btn { 
+      margin: 5px 0; /* Отступы между кнопками */
+      
+    }
+    .profile-icon {
+position: relative;
+     right: 20px;
+     top: 5px;
+    }
+    /* 1 блок */
+    .content {
+      width: 400px;
+    }
+    .steps {
+      flex-direction: row; /* Изменяем направление на вертикальное */
+      align-items: flex-start; /* Выравниваем элементы по левому краю */
+    }
+  
+    .step {
+      padding: 10px; /* Уменьшаем отступы */
+      margin: 5px 0; /* Убираем горизонтальные отступы и уменьшаем вертикальные */
+      width: 100px; /* Устанавливаем ширину на 100% для кнопок */
+      text-align: center; /* Центрируем текст */
+      position: relative;
+      top: 15px;
+      left: 0px;
+      margin-right: 10px;
+    }
+  
+    .line {
+      width: 200px; /* Устанавливаем ширину линии на 100% */
+      bottom: 40px; /* Сдвигаем линию вниз */
+    }
+  
+    .content {
+      margin-top: 10px; /* Уменьшаем отступ сверху */
+    }
+  
+    .block {
+      padding: 15px; /* Уменьшаем внутренние отступы блока */
+    }
+  
+    .form-container {
+      padding: 15px; /* Уменьшаем внутренние отступы контейнера формы */
+      width: 340px; /* Устанавливаем ширину на 100% */
+      position: relative;
+      left: 0px;
+    }
+    .next-button {
+      position: absolute;
+      top: -120px;
+      right: -210px;
+      z-index: 10;
+      width: 200px;
+    }
+    .prev-button {
+      position: relative;
+      left: 30px;
+    }
+    .prev-button, .next-button {
+      display: flex;
+      padding: 10px 55px; /* Уменьшаем отступы кнопок */
+      width: 150px; /* Устанавливаем ширину кнопок на 100% */
+      margin: 5px 0; /* Убираем горизонтальные отступы и добавляем вертикальные */
+      position: relative;
+      bottom: 35px;
+      margin-top: 50px;
+    }
+  
+    .input-birthdate {
+      width: 100%; /* Устанавливаем ширину поля даты на 100% */
+    }
+  
+    .payment-methods-container {
+      padding: 15px; /* Уменьшаем внутренние отступы контейнера оплаты */
+      width: 340px; /* Устанавливаем ширину на 100% */
+    }
+  
+    .payment-option {
+      margin-bottom: 10px; /* Уменьшаем отступы между вариантами оплаты */
+    }
+  
+    .payment-label {
+      padding: 8px; /* Уменьшаем отступы для меток оплаты */
+    }
+  
+    .payment-icon {
+      width: 40px; /* Уменьшаем размер иконок платежей */
+    }
+    .data-form {
+      width: 325px;
+    }
+ /* Подвал сайта  */
+ .foooter {
+  width: 100%;
+ }
+ footer {
+  background-color: #333;
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Изменяем на вертикальное расположение для мобильных */
+  align-items: center; /* Центрируем элементы */
+  width: 100%;
+  margin-top: -130px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column; /* Вертикальное расположение для мобильных */
+  align-items: center; /* Центрируем элементы */
+}
+
+.footer-map {
+  max-width: 100%;
+  left: -15px;; /* Устанавливаем ширину карты на 100% */
+
+}
+
+.ffz {
+  text-align: center; /* Центрируем текст */
+  font-size: 16px; /* Уменьшаем размер шрифта для мобильных */
+  left:-15px;
+}
+
+.footer-icons-container {
+  display: flex; /* Используем flexbox для иконок */
+  justify-content: center; /* Центрируем иконки */
+  flex-wrap: wrap; /* Позволяем переносить иконки на новую строку */
+  margin-top: 10px; /* Отступ сверху для иконок */
+}
+
+.footer-icon-group {
+  display: flex; /* Используем flexbox для группы иконок */
+  align-items: center; /* Центрируем иконки и текст по вертикали */
+  margin: 0 10px; /* Отступы между группами иконок */
+}
+
+.footer-icon {
+  width: 24px; /* Уменьшаем размер иконок */
+  height: 24px; /* Уменьшаем размер иконок */
+  margin-right: 5px; /* Отступ справа для иконки */
+  margin-bottom: 10px;
+}
+  }

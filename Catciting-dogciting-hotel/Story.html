@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Story.css">
+</head>
+<body>
+    <header>
+        <div class="burger" id="burger">
+          &#9776;
+          <!-- Символ бургер-меню -->
+        </div>
+        <a href="Prime.html" class="logo">
+          <img src="Icon/image.png" alt="Логотип">
+        </a>
+        <nav>
+          <ul>
+            <li><a href="hotel.html">Отель</a></li>
+            <li><a href="Grooming.html">Груминг</a></li>
+            <li class="has-dropdown">
+              <a href="#">Наши услуги</a>
+              <ul class="dropdown">
+                <li><a href="Babysitter_for_cats.html">Кэтситинг</a></li>
+                <li><a href="Dog_walking.html">Выгул собак</a></li>
+                <li><a href="Babysitter_for_dogs.html">Няня для собак</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="right-actions">
+            <a href="Order_Menu.html"><button class="order-btn">Заказать</button></a>
+            <a href="Personal_account.html" class="profile-icon">
+              <img src="Icon/image 148.png" alt="Kabinet">
+            </a>
+          </div>
+        </nav>
+      </header>
+      <script>
+        document.getElementById('burger').addEventListener('click', function() {
+          const nav = document.querySelector('nav');
+          nav.classList.toggle('active'); // Переключаем класс для показа/скрытия меню
+        });
+      </script>
+
+
+<!-- 1 блок -->
+<div class="header">
+    <h1>🡄История заказов</h1>
+    <h2>Выгулы</h2>
+  </div>
+  
+  <div class="carousel" id="dogs">
+    <div class="container_1 active">
+        <div class="order-number">№117</div>
+        <div class="date">8 апреля 2024 г. 20:05</div>
+        <div class="employee">Сотрудник: Цветков Ю.А.</div>
+        <div class="details">
+            <div class="detail">
+
+                <span>Общая цена</span>
+                <span>350₽</span>
+            </div>
+            <div class="detail">
+                <span>Добавление питомца</span>
+                <span>250₽</span>
+            </div>
+            <div class="detail">
+                <span>Скидки по акциям</span>
+                <span>-5%</span>
+            </div>
+            <div class="detail">
+                <span>Доп. время</span>
+                <span>200₽</span>
+            </div>                
+           
+        </div> 
+        <div class="blurry-circle1-2"></div>
+        <div class="total">Итого: 760₽</div>
+        <div class="blurry-circle2">←</div>
+        <div class="blurry-circle3">→</div>
+    </div>
+    
+    <div class="container_1">
+        <div class="order-number">№118</div>
+        <div class="date">9 апреля 2024 г. 15:30</div>
+        <div class="employee">Сотрудник: Иванов И.И.</div>
+        <div class="details">
+            <div class="detail">
+                <span>Общая цена</span>
+                <span>400₽</span>
+            </div>
+            <div class="detail">
+                <span>Добавление питомца</span>
+                <span>300₽</span>
+            </div>
+            <div class="detail">
+                <span>Скидки по акциям</span>
+                <span>-10%</span>
+            </div>
+            <div class="detail">
+                <span>Доп. время</span>
+                <span>150₽</span>
+            </div>
+        </div>
+        <div class="blurry-circle1-2"></div>
+        <div class="total">Итого: 840₽</div>
+        <div class="blurry-circle2">←</div>
+        <div class="blurry-circle3">→</div>
+    </div>
+  
+    <div class="container_1">
+        <div class="order-number">№119</div>
+        <div class="date">10 апреля 2024 г. 14:00</div>
+        <div class="employee">Сотрудник: Петрова А.А.</div>
+        <div class="details">
+            <div class="detail">
+                <span>Общая цена</span>
+                <span>300₽</span>
+            </div>
+            <div class="detail">
+                <span>Добавление питомца</span>
+                <span>200₽</span>
+            </div>
+            <div class="detail">
+                <span>Скидки по акциям</span>
+                <span>-5%</span>
+            </div>
+            <div class="detail">
+                <span>Доп. время</span>
+                <span>150₽</span>
+            </div>
+        </div>
+        <div class="blurry-circle1-2"></div>
+        <div class="total">Итого: 645₽</div>
+        <div class="blurry-circle2">←</div>
+        <div class="blurry-circle3">→</div>
+    </div>
+  
+    <div class="circles">
+      <div class="circle active"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+  </div>
+  
+  <div class="header">
+    <h2>Кэтситинги</h2>
+  </div>
+  
+  <div class="carousel" id="cats">
+    <div class="container_1 active">
+        <div class="order-number">№120</div>
+        <div class="date">11 апреля 2024 г. 16:30</div>
+        <div class="employee">Сотрудник: Сидоров С.С.</div>
+        <div class="details">
+            <div class="detail">
+                <span>Общая цена</span>
+                <span>350₽</span>
+            </div>
+            <div class="detail">
+                <span>Добавление питомца</span>
+                <span>250₽</span>
+            </div>
+            <div class="detail">
+                <span>Скидки по акциям</span>
+                <span>-10%</span>
+            </div>
+            <div class="detail">
+                <span>Доп. время</span>
+                <span>100₽</span>
+            </div>
+        </div>
+        <div class="blurry-circle1-2"></div>
+        <div class="total">Итого: 690₽</div>
+        <div class="blurry-circle2">←</div>
+        <div class="blurry-circle3">→</div>
+    </div>
+    
+    <div class="container_1">
+        <div class="order-number">№121</div>
+        <div class="date">12 апреля 2024 г. 10:00</div>
+        <div class="employee">Сотрудник: Цветкова Ю.А.</div>
+        <div class="details">
+            <div class="detail">
+                <span>Общая цена</span>
+                <span>500₽</span>
+            </div>
+            <div class="detail">
+                <span>Добавление питомца</span>
+                <span>350₽</span>
+            </div>
+            <div class="detail">
+                <span>Скидки по акциям</span>
+                <span>-5%</span>
+            </div>
+            <div class="detail">
+                <span>Доп. время</span>
+                <span>200₽</span>
+            </div>
+        </div>
+        <div class="blurry-circle1-2"></div>
+        <div class="total">Итого: 1045₽</div>
+        <div class="blurry-circle2">←</div>
+        <div class="blurry-circle3">→</div>
+    </div>
+  
+    <div class="container_1">
+        <div class="order-number">№122</div>
+        <div class="date">13 апреля 2024 г. 12:30</div>
+        <div class="employee">Сотрудник: Иванова И.И.</div>
+        <div class="details">
+            <div class="detail">
+                <span>Общая цена</span>
+                <span>600₽</span>
+            </div>
+            <div class="detail">
+                <span>Добавление питомца</span>
+                <span>400₽</span>
+            </div>
+            <div class="detail">
+                <span>Скидки по акциям</span>
+                <span>-10%</span>
+            </div>
+            <div class="detail">
+                <span>Доп. время</span>
+                <span>300₽</span>
+            </div>
+        </div>
+        <div class="blurry-circle1-2"></div>
+        <div class="total">Итого: 1290₽</div>
+        <div class="blurry-circle2">←</div>
+        <div class="blurry-circle3">→</div>
+    </div>
+  
+    <div class="circles">
+      <div class="circle active"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+  </div>
+  
+  <div class="header">
+    <h2>Отель</h2>
+  </div>
+  
+  <div class="carousel" id="hotel">
+    <div class="container_1 active">
+        <div class="order-number">№123</div>
+        <div class="date">14 апреля 2024 г. 11:00</div>
+        <div class="employee">Сотрудник: Сидорова А.А.</div>
+        <div class="details">
+            <div class="detail">
+                <span>Общая цена</span>
+                <span>250₽</span>
+            </div>
+            <div class="detail">
+                <span>Добавление питомца</span>
+                <span>150₽</span>
+            </div>
+            <div class="detail">
+                <span>Скидки по акциям</span>
+                <span>-5%</span>
+            </div>
+            <div class="detail">
+                <span>Доп. время</span>
+                <span>100₽</span>
+            </div>
+        </div>
+        <div class="blurry-circle1-2"></div>
+        <div class="total">Итого: 395₽</div>
+        <div class="blurry-circle2">←</div>
+        <div class="blurry-circle3">→</div>
+    </div>
+    
+    <div class="container_1">
+        <div class="order-number">№124</div>
+        <div class="date">15 апреля 2024 г. 15:30</div>
+        <div class="employee">Сотрудник: Петрова Б.Б.</div>
+        <div class="details">
+            <div class="detail">
+                <span>Общая цена</span>
+                <span>300₽</span>
+            </div>
+            <div class="detail">
+                <span>Добавление питомца</span>
+                <span>200₽</span>
+            </div>
+            <div class="detail">
+                <span>Скидки по акциям</span>
+                <span>-10%</span>
+            </div>
+            <div class="detail">
+                <span>Доп. время</span>
+                <span>150₽</span>
+            </div>
+        </div>
+        <div class="blurry-circle1-2"></div>
+        <div class="total">Итого: 640₽</div>
+        <div class="blurry-circle2">←</div>
+        <div class="blurry-circle3">→</div>
+    </div>
+  
+    <div class="circles">
+      <div class="circle active"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+  </div>
+  
+  <div class="header">
+    <h2>Грумминг</h2>
+  </div>
+  
+  <div class="carousel" id="grooming">
+    <div class="container_1 active">
+        <div class="order-number">№125</div>
+        <div class="date">16 апреля 2024 г. 11:00</div>
+        <div class="employee">Сотрудник: Сидорова А.А.</div>
+        <div class="details">
+            <div class="detail">
+                <span>Общая цена</span>
+                <span>250₽</span>
+            </div>
+            <div class="detail">
+                <span>Добавление питомца</span>
+                <span>150₽</span>
+            </div>
+            <div class="detail">
+                <span>Скидки по акциям</span>
+                <span>-5%</span>
+            </div>
+            <div class="detail">
+                <span>Доп. время</span>
+                <span>100₽</span>
+            </div>
+        </div>
+        <div class="blurry-circle1-2"></div>
+        <div class="total">Итого: 395₽</div>
+        <div class="blurry-circle2">←</div>
+        <div class="blurry-circle3">→</div>
+    </div>
+    
+    <div class="container_1">
+        <div class="order-number">№126</div>
+        <div class="date">17 апреля 2024 г. 15:30</div>
+        <div class="employee">Сотрудник: Петрова Б.Б.</div>
+        <div class="details">
+            <div class="detail">
+                <span>Общая цена</span>
+                <span>300₽</span>
+            </div>
+            <div class="detail">
+                <span>Добавление питомца</span>
+                <span>200₽</span>
+            </div>
+            <div class="detail">
+                <span>Скидки по акциям</span>
+                <span>-10%</span>
+            </div>
+            <div class="detail">
+                <span>Доп. время</span>
+                <span>150₽</span>
+            </div>
+        </div>
+        <div class="blurry-circle1-2"></div>
+        <div class="total">Итого: 640₽</div>
+        <div class="blurry-circle2">←</div>
+        <div class="blurry-circle3">→</div>
+    </div>
+  
+    <div class="circles">
+      <div class="circle active"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+  </div>
+  
+  <script>
+  const carousels = document.querySelectorAll('.carousel');
+  
+  carousels.forEach(carousel => {
+      const containers = carousel.querySelectorAll('.container_1');
+      const circles = carousel.querySelectorAll('.circle');
+      let currentIndex = 0;
+  
+      function showContainer(index) {
+          containers.forEach((container, i) => {
+              container.classList.remove('active');
+              container.style.transform = 'translateX(100%)'; // Сначала сдвигаем все вправо
+          });
+          containers[index].classList.add('active');
+          containers[index].style.transform = 'translateX(0)'; // Показываем активную карточку
+  
+          circles.forEach((circle, i) => {
+              circle.classList.toggle('active', i === index);
+          });
+      }
+  
+      carousel.querySelectorAll('.blurry-circle2').forEach((button) => {
+          button.addEventListener('click', () => {
+              currentIndex = (currentIndex > 0) ? currentIndex - 1 : containers.length - 1;
+              showContainer(currentIndex);
+          });
+      });
+  
+      carousel.querySelectorAll('.blurry-circle3').forEach((button) => {
+          button.addEventListener('click', () => {
+              currentIndex = (currentIndex < containers.length - 1) ? currentIndex + 1 : 0;
+              showContainer(currentIndex);
+          });
+      });
+  
+      // Инициализация отображаемой карточки
+      showContainer(currentIndex);
+  });
+  </script>
+
+  </body>
+      <!-- 
+Подвал сайта -->
+<footer>
+    <div class="footer-content">
+      <div class="footer-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.2028318455594!2d37.61962231588116!3d55.75399998055546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1670000000000!5m2!1sru!2sru" width="450" height="250" style="border:0;"    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+  
+      <div class="ffz">
+        <div class="logo_1"><img src="Icon/image.png" alt=""></div>
+      <p >brandnamesss@168gmail.com</p>
+      <p>+ 7 903 451 23 54</p>
+      <p>Ул.Кирова 12к5, Москва</p>
+      <div class="footer-icons-container">
+        <div class="footer-icon-group">
+          <img src="Icon/nu.png" alt="Telegram" class="footer-icon">
+          <span>@catsdogs5501/бот</span>
+        </div>
+        <div class="footer-icon-group">
+          <img src="Icon/wt.png" alt="WhatsApp" class="footer-icon">
+          <span>@catogs5901</span>
+        </div>
+        <div class="footer-icon-group">
+          <img src="Icon/insta.png" alt="Instagram" class="footer-icon">
+          <span>@catosik01</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  </footer>
+</html>
